@@ -64,12 +64,7 @@
             font-weight: 500;
             transition: all 0.3s ease;
             font-size: 1.25rem;
-            color: #FFFFFF;
-        }
-
-        .btn-primary-custom:hover {
-            background: #8026D9;
-            transform: translateY(-0.125rem);
+            color: #FAFAFA;
         }
 
         .btn-google {
