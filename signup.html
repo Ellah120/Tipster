@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Create Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./assets/main.css" />
+</head>
+<body>
+    <div class="min-vh-100 align-items-center justify-content-center pt-3 pb-5 bg-hero">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <!-- Form Section -->
+                <div class="col-lg-6 mx-auto">
+                    <div class="text-center mb-4">
+                        <div class="logo-text">tippin</div>
+                    </div>
+
+                    <div class="bg-dark-card rounded-4 p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="h3 mb-0 fw-700 fs-4">Create an account</h2>
+                            <a href="./login.html" class="link-secondary fw-400 fs-6">log in instead</a>
+                        </div>
+
+                        <!-- Account Type Tabs -->
+                        <div class="d-flex justify-content-between mb-4 rounded-5 p-1" style="border: 1px solid #222224;">
+                            <button class="btn btn-tab active fs-6 fw-400 w-50" id="tipsterBtn">As a Tipster</button>
+                            <button class="btn btn-tab s-6 fw-400 w-50" id="subscriberBtn">As a Subscriber</button>
+                        </div>
+
+                        <!-- Form -->
+                        <form id="signupForm">
+                            <div class="mb-3">
+                                <label class="form-label mb-2 fw-400 fs-6" style="color: #9CA3AF;">First name</label>
+                                <input type="text" class="form-control form-control-lg input-dark" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-400 fs-6 mb-2" style="color: #9CA3AF;">Last name</label>
+                                <input type="text" class="form-control form-control-lg input-dark" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-400 fs-6 mb-2" style="color: #9CA3AF;">Email</label>
+                                <input type="email" class="form-control form-control-lg input-dark" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-400 fs-6 mb-2" style="color: #9CA3AF;">Password</label>
+                                <input type="password" class="form-control form-control-lg input-dark" required>
+                            </div>
+
+                            <!-- Terms Checkbox -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="termsCheck" value="" required>
+                                <label class="form-check-label terms-text" for="termsCheck">
+                                    By creating an account, I agree to our Terms of use and Privacy Policy
+                                </label>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary-custom w-100 mb-3">Create an account</button>
+                        </form>
+
+                        <!-- Divider -->
+                        <div class="divider-or">OR</div>
+
+                        <!-- Google Button -->
+                        <button class="btn btn-google w-100 d-flex align-items-center justify-content-center gap-2">
+                            <img src="./assets/images/google-img.svg" alt="google" style="width: 24px; height: 24px;">
+                            Continue with Google
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tab Switching
+        const tipsterBtn = document.getElementById('tipsterBtn');
+        const subscriberBtn = document.getElementById('subscriberBtn');
+
+        tipsterBtn.addEventListener('click', () => {
+            tipsterBtn.classList.add('active');
+            subscriberBtn.classList.remove('active');
+        });
+
+        subscriberBtn.addEventListener('click', () => {
+            subscriberBtn.classList.add('active');
+            tipsterBtn.classList.remove('active');
+        });
+
+        // Form Submission
+        const form = document.getElementById('signupForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            console.log('Form submitted with data:', Object.fromEntries(formData));
+            alert('Account creation submitted!');
+        });
+    </script>
+</body>
+</html>

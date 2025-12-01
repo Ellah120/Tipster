@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="../home.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="../home.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/home.svg" alt="home"></span> Home
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Tipsters/tipsters.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Trades/trades.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/trades.svg" alt="trades"></span> My Trades
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Affiliates/directReferrals.html" class="dashboard-nav-link active">
+                    <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="#" class="dashboard-nav-link">
+                    <span><img src="../assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Settings/profile.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="../home.html" class="mobile-logo">tippin</a>
+        </div>
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+            <div>
+                <h1 class="dashboard-title">Affiliate Program</h1>
+                <p class="dashboard-subtitle">Earn commissions by referring traders to Kuja</p>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <button class="dashboard-wallet"><span><img src="../assets/images/wallet.svg" alt=""></span> Wallet Balance: $50</button>
+                <div class="d-flex ">
+                    <p class="p-3 rounded-5 mb-0" style="background-color: #8026D933; font-size: 0.75rem;">BW</p>
+                    <select class="dashboard-dropdown">
+                    <option>Billionaire Winners</option>
+                    <option>All Tipsters</option>
+                    <option>Top Rated</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <!-- TRADING PERFORMANCE SECTION -->
+        <div class="trades-performance-container">
+            <div style="border: 1px solid #333333;" class="mb-3 rounded-4">
+            <h2 class="trades-section-title">Affiliate Performance</h2>
+            
+            <!-- Performance Stats Grid -->
+            <div class="row g-3 mb-4">
+                <div class="col-4 col-md-4 ">
+                    <div class="trades-metric-card">
+                        <div class="trades-metric-label">Direct Referrals</div>
+                        <div class="trades-metric-value">32</div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="trades-metric-card">
+                        <div class="trades-metric-label">Indirect Refereals</div>
+                        <div class="trades-metric-value">448</div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="trades-metric-card border-0">
+                        <div class="trades-metric-label">Total Earning</div>
+                        <div class="trades-metric-value">+$528</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- How it works -->
+             <div style="width: 100%; border: 1px solid #333333;" class="affiliate-tabs rounded-3 mb-3">
+                <div>
+                    <p style="font-size: 18px; font-weight: 500; color: #FAFAFA; margin: 0;">How it Works</p>
+                    <p style="color: #9CA3AF; font-size: 12px;">Share your unique referral link and earn a percentage of the trading fees generated by the traders</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between my-3">
+                    <div>
+                        <p style="font-weight: 700; color: #FAFAFA; margin: 0;">1 Tier 1: Direct Referrals</p>
+                        <p style="font-size: 12px; font-weight: 400;">Earn 20% of the trading fees from traders you directly refer to Kuja</p>
+                    </div>
+                    <div>
+                        <p style="font-weight: 700; color: #FAFAFA; margin: 0;">2 Tier 2: Indirect Referrals</p>
+                        <p style="font-size: 12px; font-weight: 400;">Earn 10% of the trading fees from traders referred by your direct referrals.</p>
+                    </div>
+                </div>
+                <div>
+                    <p style="font-size: 14px; color: #FAFAFA; margin-bottom: 5px;">Your Referral Link</p>
+                    <div class="input-group mb-1" style="width: 60%;">
+                        <input type="text" class="form-control" style="border: 1px solid #D5D7DA; color: #717680; font-size: 12px;" placeholder="https://kuja.io/ref/j8s92k4" aria-label="https://kuja.io/ref/j8s92k4" aria-describedby="basic-addon2" disabled>
+                        <span class="input-group-text" id="basic-addon2" style="background: transparent; border: 1px solid #333333; border-radius: 0; font-size: 12px; color: #FAFAFA;"><img src="../assets/images/copy-icon.svg" alt="" class="me-1">Copy Link</span>
+                    </div>
+                    <p style="font-size: 12px; color: #A1A1AA;">Share this link on social media, forums, or with friends to earn commissions.</p>
+                </div>
+             </div>
+
+            <!-- Referral Table Container -->
+             <p style="color: #FAFAFA;">My Referrals</p>
+             <!-- Referral Types -->
+                <div class="d-flex flex-column flex-md-row justify-content-between ">
+                    <div class="gap-3 d-flex align-items-lg-center">
+                    <button class="trades-tab-btn active" data-tab="all">Direct Referrals</button>
+                    <a href="./indirectReferrals.html" style="text-decoration: none;"><button class="trades-tab-btn" data-tab="open">Indirect Referrals</button></a>
+                    </div>
+                    <div class="gap-3 d-flex align-items-center">
+                        <p style="font-size: 12px; color: #414651;">Filter by</p>
+                        <select class="mb-3 p-2 rounded-3" style="font-size: 12px; background: transparent; color: #D1D5DB;">
+                            <option disabled selected>select</option>
+                            <option>Tier</option>
+                            <option>Status</option>
+                        </select>
+                    </div>
+                </div>
+            <div class="trades-table-wrapper">
+                  <!-- Table -->
+                <div class="trades-table-scroll">
+                    <table class="trades-table">
+                        <thead>
+                            <tr style="border-bottom: 1px solid #333333;">
+                                <th>USER</th>
+                                <th>JOIN DATE</th>
+                                <th>STATUS</th>
+                                <th>TIER</th>
+                                <th>EARNINGS</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tradesTableBody">
+                            <tr>
+                                <td>
+                                    <div class="trades-asset">
+                                        <span class="trades-asset-icon"><img src="../assets/images/alex-thompson.svg" alt="" class="me-3"></span>
+                                        <span>janedoe</span>
+                                    </div>
+                                </td>
+                                <td><span class="trades-copied-name">15/09/2023</span></td>
+                                <td><span class="trades-badge trades-badge-crypto border-0" style="background-color: #1CCB5C33; color: #4ADE80;">Active</span></td>
+                                <td>Tier 1</td>
+                                <td>$32.50</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trades-asset">
+                                        <span class="trades-asset-icon"><img src="../assets/images/alex-thompson.svg" alt="" class="me-3"></span>
+                                        <span>mikebrown</span>
+                                    </div>
+                                </td>
+                                <td><span class="trades-copied-name">15/09/2023</span></td>
+                                <td><span class="trades-badge trades-badge-crypto border-0" style="background-color: #1CCB5C33; color: #4ADE80;">Active</span></td>
+                                <td>Tier 1</td>
+                                <td>$32.50</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trades-asset">
+                                        <span class="trades-asset-icon"><img src="../assets/images/alex-thompson.svg" alt="" class="me-3"></span>
+                                        <span>sarahsmith</span>
+                                    </div>
+                                </td>
+                                <td><span class="trades-copied-name">15/09/2023</span></td>
+                                <td><span class="trades-badge trades-badge-crypto border-0" style="background-color: #1CCB5C33; color: #4ADE80;">Active</span></td>
+                                <td>Tier 1</td>
+                                <td>$32.50</td>
+                            </tr>
+                            <tr>
+                               <td>
+                                    <div class="trades-asset">
+                                        <span class="trades-asset-icon"><img src="../assets/images/alex-thompson.svg" alt="" class="me-3"></span>
+                                        <span>robertjones</span>
+                                    </div>
+                                </td>
+                                <td><span class="trades-copied-name">15/09/2023</span></td>
+                                <td><span class="trades-badge trades-badge-crypto border-0" style="background-color: #1CCB5C33; color: #4ADE80;">Active</span></td>
+                                <td>Tier 1</td>
+                                <td>$32.50</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="trades-asset">
+                                        <span class="trades-asset-icon"><img src="../assets/images/alex-thompson.svg" alt="" class="me-3"></span>
+                                        <span>lisawang</span>
+                                    </div>
+                                </td>
+                                <td><span class="trades-copied-name">15/09/2023</span></td>
+                                <td><span class="trades-badge trades-badge-crypto border-0" style="background-color: #1CCB5C33; color: #4ADE80;">Active</span></td>
+                                <td>Tier 1</td>
+                                <td>$32.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Footer with pagination -->
+                <div class="trades-table-footer">
+                    <p class="trades-showing-text m-0">Showing <span style="color: #FAFAFA;">5</span> referrals</p>
+                    <div class="trades-pagination">
+                        <button class="trades-page-btn active">1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Only prevent default for links with href="#"
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+</body>

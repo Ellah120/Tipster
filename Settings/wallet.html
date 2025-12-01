@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="../home.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="../home.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/home.svg" alt="home"></span> Home
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Tipsters/tipsters.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Trades/trades.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/trades.svg" alt="trades"></span> My Trades
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Affiliates/directReferrals.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Community/community.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Settings/profile.html" class="dashboard-nav-link active">
+                    <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="../home.html" class="mobile-logo">tippin</a>
+        </div>
+
+        <!-- HEADER -->
+        <div class="dashboard-header-account mb-0">
+            <div class="">
+                <h1 class="dashboard-title">Settings</h1>
+                <p class="dashboard-subtitle">Manage your account and preferences</p>
+            </div>
+        </div>
+         <!-- Profile Settings -->
+        <div class="account-settings-wrapper">
+            <!-- Account tabs navigation -->
+            <div class="account-tabs-container">
+                <a href="./profile.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="profile">Profile</button></a>
+                <a href="./inactiveSubscription.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="subscriptions">Subscriptions</button></a>
+                <a href="./wallet.html" style="text-decoration: none;"><button class="account-tab-btn account-tab-active" data-tab="wallet">Wallet</button></a>
+                <a href="./notifications.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="notifications">Notifications</button></a>
+                <a href="./security.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="security">Security</button></a>
+            </div>
+            <!-- Wallet Section -->
+             <div style="padding: 30px; border: 1px solid #333333; border-radius: 12px;">
+                <div class="mb-4">
+                    <h2 style="font-size: 18px; font-weight: 500; color: #FAFAFA;">Wallet Information</h2>
+                    <p style="font-size: 12px; color: #9CA3AF;">Manage your connected wallets and payment methods</p>
+                </div>
+                <div class="wallet-balance-section">
+        <div class="wallet-balance-container">
+            <div class="wallet-balance-label">Wallet Balance <span style="font-weight: 600;" class="ms-2">$50</span></div>
+            <div class="wallet-action-buttons">
+            <button class="wallet-add-btn"> + Add Money</button>
+            <button class="wallet-withdraw-btn">Withdraw</button>
+        </div>
+        </div>
+        
+    </div>
+    <div class="wallet-payment-section">
+        <div class="wallet-subsection-title">Payment methods</div>
+        <div class="wallet-payment-list">
+            <div class="wallet-payment-item">
+                <div class="wallet-payment-icon"><img src="../assets/images/credit-card-icon.svg" alt=""></div>
+                <div class="wallet-payment-details">
+                    <div class="wallet-payment-name">Solana Wallet</div>
+                    <div class="wallet-payment-meta">Phanto.... 111111</div>
+                </div>
+                <div class="wallet-payment-status">
+                    <div class="wallet-status-badge wallet-status-active">Active</div>
+                </div>
+                <button class="wallet-delete-btn"><img src="../assets/images/delete-icon.svg" alt=""></button>
+            </div>
+            <div class="wallet-payment-item">
+                <div class="wallet-payment-icon"><img src="../assets/images/credit-card-icon.svg" alt=""></div>
+                <div class="wallet-payment-details">
+                    <div class="wallet-payment-name">Credit Card</div>
+                    <div class="wallet-payment-meta">5399......7624 <span style="border-left: 1px solid #9CA3AF;" class="ps-1">Exp 01/28</span></div>
+                </div>
+                <div class="wallet-payment-status">
+                    <div class="wallet-status-badge">Active</div>
+                </div>
+                <button class="wallet-delete-btn"><img src="../assets/images/delete-icon.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <div class="wallet-add-payment-section">
+        <div class="wallet-subsection-title">Add Payment Method</div>
+        <div class="wallet-payment-options">
+            <div class="wallet-payment-option"><span><img src="../assets/images/credit-card-icon.svg" class="me-3" alt=""></span>Credit Card</div>
+            <div class="wallet-payment-option"><span><img src="../assets/images/bank-account-icon.svg" class="me-3" alt=""></span>Bank Account</div>
+            <div class="wallet-payment-option"><span><img src="../assets/images/crypto-wallet-icon.svg" class="me-3" alt=""></span>Crypto Wallet</div>
+        </div>
+    </div>
+    <div class="wallet-transaction-section">
+        <div class="wallet-subsection-title">Transaction History</div>
+        <div class="wallet-table-wrapper">
+            <div class="trades-table-scroll ">
+            <table class="wallet-transactions-table">
+                <thead class="wallet-table-head">
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Source</th>
+                        <th>Receipt</th>
+                    </tr>
+                </thead>
+                <tbody class="wallet-table-body">
+                    <tr>
+                        <td>15/09/2023</td>
+                        <td>Deposit</td>
+                        <td>$120</td>
+                        <td>Credit Card</td>
+                        <td><a href="#" class="wallet-view-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>15/09/2023</td>
+                        <td>Deposit</td>
+                        <td>$599</td>
+                        <td>Crypto Wallet</td>
+                        <td><a href="#" class="wallet-view-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>15/09/2023</td>
+                        <td>Withdrawal</td>
+                        <td>$20</td>
+                        <td>Tippin Wallet</td>
+                        <td><a href="#" class="wallet-view-link">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>15/09/2023</td>
+                        <td>Withdrawal</td>
+                        <td>$15</td>
+                        <td>Tippin Wallet</td>
+                        <td><a href="#" class="wallet-view-link">View</a></td>
+                    </tr>
+                     <tr>
+                        <td>15/09/2023</td>
+                        <td>Withdrawal</td>
+                        <td>$821</td>
+                        <td>Tippin Wallet</td>
+                        <td><a href="#" class="wallet-view-link">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="wallet-pagination">
+            <div class="wallet-pagination-info"><span style="color: #A1A1AA;">Showing </span>5 entries</div>
+            <div class="wallet-pagination-buttons">
+                <button class="wallet-pagination-btn">1</button>
+        </div>
+        </div>
+    </div>
+    </div>
+        </div>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Only prevent default for links with href="#"
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+</body>

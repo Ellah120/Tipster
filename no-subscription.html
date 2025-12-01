@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="./home.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="./home.html" class="dashboard-nav-link active">
+                    <span><img src="./assets/images/home.svg" alt="home"></span> Home
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="./Tipsters/tipsters.html" class="dashboard-nav-link">
+                    <span><img src="./assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="./Trades/trades.html" class="dashboard-nav-link">
+                    <span><img src="./assets/images/trades.svg" alt="trades"></span> My Trades
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="./Affiliates/directReferrals.html" class="dashboard-nav-link">
+                    <span><img src="./assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="./Community/community.html" class="dashboard-nav-link">
+                    <span><img src="./assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="./Settings/profile.html" class="dashboard-nav-link">
+                    <span><img src="./assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="./home.html" class="mobile-logo">tippin</a>
+        </div>
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+            <div>
+                <h1 class="dashboard-title">Dashboard</h1>
+                <p class="dashboard-subtitle">Welcome back, track your progress and copy trades from top performers</p>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <button class="dashboard-wallet"><span><img src="./assets/images/wallet.svg" alt=""></span> Wallet Balance: $50</button>
+                <div class="d-flex ">
+                    <p class="p-3 rounded-5 mb-0" style="background-color: #8026D933; font-size: 0.75rem;">BW</p>
+                    <select class="dashboard-dropdown">
+                    <option>Billionaire Winners</option>
+                    <option>All Tipsters</option>
+                    <option>Top Rated</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <!-- NO SUBSCRIPTION -->
+         <div style="width: 100%; background-color: #F15B5B33; border: 1px solid #F87171; color: #F87171; border-radius: 12px; text-align: center;" class="p-3 mb-5">
+            <p class="m-0">You don't have an active subscription. Please subscribe to a plan to start copying tips</p>
+         </div>
+ <!-- MAIN CONTENT ROW -->
+            <!-- LEFT COLUMN -->
+        <!-- STATS ROW -->
+         <div class="row g-3">
+            <div class="col-lg-8">
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="dashboard-stat-card">
+                    <div class="dashboard-stat-icon stat-green"><img src="./assets/images/currency-dollar.svg" alt="total-earnings"></div>
+                    <div class="dashboard-stat-label">Total Earnings</div>
+                    <div class="dashboard-stat-value">$2,456.89</div>
+                    <a href="#" class="dashboard-stat-link">View Trades</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="dashboard-stat-card">
+                    <div class="dashboard-stat-icon stat-orange"><img src="./assets/images/trend-up.svg" alt="profit/loss"></div>
+                    <div class="dashboard-stat-label">Profit/Loss</div>
+                    <div class="dashboard-stat-value">+$356.12</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="dashboard-stat-card">
+                    <div class="dashboard-stat-icon stat-purple"><img src="./assets/images/affiliate-earnings.svg" alt="affiliate-earnings"></div>
+                    <div class="dashboard-stat-label">Affiliate Earnings</div>
+                    <div class="dashboard-stat-value">$89.50</div>
+                    <a href="#" class="dashboard-stat-link">View Referrals</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="dashboard-stat-card">
+                    <div class="dashboard-stat-icon stat-blue"><img src="./assets/images/tipster-earnings.svg" alt=""></div>
+                    <div class="dashboard-stat-label">Tipsters Following</div>
+                    <div class="dashboard-stat-value">24</div>
+                    <a href="#" class="dashboard-stat-link">View Tipsters</a>
+                </div>
+            </div>
+        </div>
+            
+                <!-- PERFORMANCE CHART -->
+                <div class="dashboard-chart-card">
+                    <div class="dashboard-chart-header">
+                        <div class="dashboard-chart-title">
+                        Performance Overview <span style="color: #4ADE80; font-size: 0.875rem; background-color: #1CCB5C33; padding: 0.1875rem; border-radius: 0.3125rem;"><img src="./assets/images/trend-icon.svg" alt="trend" class="me-1">+42.86%</span>
+                        </div>
+                        <div class="dashboard-chart-time">
+                            <button class="dashboard-chart-btn active">1W</button>
+                            <button class="dashboard-chart-btn">1M</button>
+                            <button class="dashboard-chart-btn">3M</button>
+                            <button class="dashboard-chart-btn">1Y</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-chart-placeholder">
+                        <div class="container mt-5">
+                            <div class="chart-container px-2">
+                             <canvas id="weeklyChart"></canvas>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="dashboard-chart-stats">
+                        <div class="dashboard-chart-stat">
+                            <div class="dashboard-chart-stat-label"><span><img src="./assets/images/trend-icon.svg" alt="win-rate"></span> Win Rate</div>
+                            <div class="dashboard-chart-stat-value" style="color: #4ADE80;">68.5%</div>
+                        </div>
+                        <div class="dashboard-chart-stat">
+                            <div class="dashboard-chart-stat-label"><span><img src="./assets/images/avg-return.svg" alt="avg-return"></span> Avg. Return</div>
+                            <div class="dashboard-chart-stat-value">7.2%</div>
+                        </div>
+                        <div class="dashboard-chart-stat">
+                            <div class="dashboard-chart-stat-label"><span><img src="./assets/images/right-arrow.svg" alt="total-trade"></span> Total Trades</div>
+                            <div class="dashboard-chart-stat-value">32 <span style="font-size: 0.625rem; color: #4ADE80;">+5 this week</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RECENT TRADES -->
+                <div class="dashboard-trades-card">
+                    <h3 class="dashboard-trades-title px-3 pt-3 pb-0">Recent Trades</h3>
+                    <p class="dashboard-trades-subtitle px-3 pt-0 pb-3">Your latest trading activity</p>
+                    <table class="dashboard-trades-table">
+                        <thead>
+                            <tr>
+                                <th>TRADE ID</th>
+                                <th>ASSET</th>
+                                <th>POSITION</th>
+                                <th>ENTRY</th>
+                                <th>EXIT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#8764523</td>
+                                <td><span><img src="./assets/images/asset-icon.svg" alt="asset"></span> ETH/USD</td>
+                                <td>Long</td>
+                                <td>$1,892.545</td>
+                                <td>$1,923</td>
+                            </tr>
+                            <tr>
+                                <td>#8764489</td>
+                                <td><span><img src="./assets/images/asset-icon.svg" alt="asset"></span> BTC/USD</td>
+                                <td>Short</td>
+                                <td>$39,245.00</td>
+                                <td>$38,956.00</td>
+                            </tr>
+                            <tr>
+                                <td>#8764432</td>
+                                <td><span><img src="./assets/images/asset-icon.svg" alt="asset"></span> SOL/USD</td>
+                                <td>Long</td>
+                                <td>$78.34</td>
+                                <td>$76.12</td>
+                            </tr>
+                            <tr>
+                                <td>#8764387</td>
+                                <td><span><img src="./assets/images/asset-icon.svg" alt="asset"></span> XRP/USD</td>
+                                <td>Short</td>
+                                <td>$0.56</td>
+                                <td>$0.58</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 1.25rem;" class="px-3 pb-4">
+                        <a href="#" class="dashboard-trades-link">View all trades</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-lg-4">
+                <!-- TOP TIPSTERS -->
+                 <button class="dashboard-tipsters-btn" style="background-color: #222224; color: #4A4A4A;">Find a Trade</button>
+                <div class="dashboard-tipsters-card">
+                    <h3 class="dashboard-trades-title mb-3" style="color: #FAFAFA;">Top Tipsters</h3>
+
+                    <!-- Tipster Items -->
+                    <div class="dashboard-tipster-item">
+                        <div class="dashboard-tipster-info">
+                            <div class="dashboard-tipster-avatar"><img src="./assets/images/alex-thompson.svg" alt="picture"></div>
+                            <div class="dashboard-tipster-arrow"><img src="./assets/images/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="dashboard-tipster-details">
+                                <div class="dashboard-tipster-name">Alex Thompson <span class="dashboard-tipster-badge"><img src="./assets/images/verified.svg" alt="verified"> Verified</span></div>
+                                <div class="dashboard-tipster-stats"><span style="color: #9CA3AF;">2x Odds</span> Win Rate 100% ROI +18.5%</div>
+                            </div>
+                    </div>
+
+                    <div class="dashboard-tipster-item">
+                        <div class="dashboard-tipster-info">
+                            <div class="dashboard-tipster-avatar"><img src="./assets/images/lucas.svg" alt="pic"></div>
+                            <div class="dashboard-tipster-arrow"><img src="./assets/images/arrow.svg" alt=""></div> 
+                        </div>
+                        <div class="dashboard-tipster-details">
+                                <div class="dashboard-tipster-name">Lucas Gonzalez <span class="dashboard-tipster-badge"><img src="./assets/images/verified.svg" alt=""> Verified</span></div>
+                                <div class="dashboard-tipster-stats"><span style="color: #9CA3AF;">6x Odds</span> Win Rate 24% ROI +34.5%</div>
+                            </div>
+                    </div>
+
+                    <div class="dashboard-tipster-item">
+                        <div class="dashboard-tipster-info">
+                            <div class="dashboard-tipster-avatar"><img src="./assets/images/jennifer.svg" alt="pic"></div>
+                            <div class="dashboard-tipster-arrow"><img src="./assets/images/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="dashboard-tipster-details">
+                                <div class="dashboard-tipster-name">Jennifer Alison <span class="dashboard-tipster-badge"><img src="./assets/images/verified.svg" alt=""> Verified</span></div>
+                                <div class="dashboard-tipster-stats"><span style="color: #9CA3AF;">4.5x Odds</span> Win Rate 100% ROI +18.5%</div>
+                            </div>
+                    </div>
+
+                    <div class="dashboard-tipster-item">
+                        <div class="dashboard-tipster-info">
+                            <div class="dashboard-tipster-avatar"><img src="./assets/images/sara.svg" alt=""></div>
+                            <div class="dashboard-tipster-arrow"><img src="./assets/images/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="dashboard-tipster-details">
+                                <div class="dashboard-tipster-name">Sara Johnston <span class="dashboard-tipster-badge"><img src="./assets/images/verified.svg" alt=""> Verified</span></div>
+                                <div class="dashboard-tipster-stats"><span style="color: #9CA3AF;">2x Odds</span> Win Rate 72% ROI +18.5%</div>
+                            </div>
+                    </div>
+
+                    <div class="dashboard-tipster-item">
+                        <div class="dashboard-tipster-info">
+                            <div class="dashboard-tipster-avatar"><img src="./assets/images/michael.svg" alt=""></div>
+                            <div class="dashboard-tipster-arrow"><img src="./assets/images/arrow.svg" alt=""></div>
+                        </div>
+                        <div class="dashboard-tipster-details">
+                                <div class="dashboard-tipster-name">Michael Keeran <span class="dashboard-tipster-badge"><img src="./assets/images/verified.svg" alt=""> Verified</span></div>
+                                <div class="dashboard-tipster-stats"><span style="color: #9CA3AF;">2x Odds</span> Win Rate 72% ROI +18.5%</div>
+                            </div>
+                    </div>
+
+                    <button class="dashboard-see-more mt-3">See More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+    <script>
+  const ctx = document.getElementById("weeklyChart").getContext("2d");
+
+  const weeklyChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [{
+        label: "Weekly Data",
+        data: [2000, 2050, 2100, 2200, 2250, 2400, 2700],
+        
+        borderColor: "rgba(0, 255, 120, 0.9)",
+        backgroundColor: "rgba(0, 255, 120, 0.1)",
+        
+        borderWidth: 2,
+        tension: 0.4, /* smooth curve */
+        fill: false,
+        pointRadius: 0, /* remove dots */
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          ticks: { color: "#535862", font: {
+            size: 12
+            } },
+          grid: { display: false }
+        },
+        y: {
+          min: 0,
+          max: 3000,
+          ticks: { color: "#535862" , stepSize: 750, font: {
+            size: 12
+            } },
+          grid: { display: false }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+      }
+    }
+  });
+</script>
+</body>
+</html>

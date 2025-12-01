@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="../home.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="../home.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/home.svg" alt="home"></span> Home
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Tipsters/tipsters.html" class="dashboard-nav-link active">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Trades/trades.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/trades.svg" alt="trades"></span> My Trades
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Affiliates/directReferrals.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Community/community.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Settings/profile.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="../home.html" class="mobile-logo">tippin</a>
+        </div>
+    
+     <!-- TIPSTER PROFILE CONTENT -->
+    <div class="">
+        <!-- Back Button -->
+       <a href="./tipsters.html" style="text-decoration: none;"><button class="profile-back-btn">
+            <img src="../assets/images/back-arrow.svg" alt=""> Back
+        </button>
+        </a>
+        <p class="profile-performance-title ">Tipster Profile</p>
+        <!-- Profile Header Section -->
+        <div class="profile-header">
+            <div class="profile-info-row">
+                <!-- Avatar & Basic Info -->
+                <div class="profile-avatar-section">
+                    <img src="../assets/images/profile-pic.svg" alt="Alex Thompson" class="profile-avatar">
+                    <div class="profile-name">Alex Thompson <span class="px-2 py-1 rounded-4 ms-1" style="background-color: #16A34A; font-size: 12.5px; color: #FAFAFA; font-weight: 200;"><img src="../assets/images/verified-white.svg" alt="Verified" class="me-1">Verified</span></div>
+                    <div class="profile-badge-group">
+                        <div class="profile-badge premium px-2 py-1" style="font-size: 12.5px; font-weight: 200;"><img src="../assets/images/star-icon.svg" alt=""> Top Rated</div>
+                        <div class="profile-badge vip px-2 py-1" style="font-size: 12.5px; font-weight: 200;"><img src="../assets/images/dollar-sign.svg" alt=""> Over $20k</div>
+                    </div>
+                    <div class="profile-odds mt-2">3X odds</div>
+                    <div class="profile-followers">
+                        <div class="profile-followers-item">
+                            <div class="profile-followers-label">Followers <span style="color: #FAFAFA; font-size: 14;" class="ms-1">200</span></div>
+                        </div>
+                        <div class="profile-followers-item">
+                            <div class="profile-followers-label">Following <span style="color: #FAFAFA; font-size: 14;" class="ms-1">12</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                 <div class="d-block">
+                <div class="profile-stats-grid">
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Total Trades</div>
+                        <div class="profile-stat-value">32</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Last Trade</div>
+                        <div class="profile-stat-value">11h ago</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Live Copiers</div>
+                        <div class="profile-stat-value">178</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Win Rate</div>
+                        <div class="profile-stat-value positive">68.5%</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Total Profit</div>
+                        <div class="profile-stat-value">+$44,258</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Total Loss</div>
+                        <div class="profile-stat-value">-$187.6</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Avg Profit</div>
+                        <div class="profile-stat-value">-$187.6</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">ROI</div>
+                        <div class="profile-stat-value positive">+287.5%</div>
+                    </div>
+                    <!-- Action Buttons -->
+            </div>
+            <div class="profile-actions">
+                <button class="profile-copy-btn">Copy Trades</button>
+                <button class="profile-follow-btn">+ Follow</button>
+            </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!-- Performance Overview Section -->
+         <div class="profile-performance-header">
+                <div class="profile-performance-title">Performance Overview</div>
+                <div class="profile-period-toggles">
+                    <button class="profile-period-btn active">1W</button>
+                    <button class="profile-period-btn">1M</button>
+                    <button class="profile-period-btn">3M</button>
+                    <button class="profile-period-btn">1Y</button>
+                </div>
+            </div>
+       <div class="chart-container">
+        <canvas id="myChart"></canvas>
+       </div>
+
+        <!-- Trades Section -->
+
+            <div class="profile-trades-title">Trades</div>
+        <div class="profile-trades">
+            <div class="profile-trades-tabs">
+                <a href="./openedPosition.html" style="text-decoration: none;"><button class="profile-trades-tab">Open Positions</button></a>
+               <a href="./closedPosition.html" style="text-decoration: none;"><button class="profile-trades-tab active">Closed Positions</button></a> 
+            </div>
+
+            <table class="profile-trades-table">
+                <thead>
+                    <tr>
+                        <th>ASSET</th>
+                        <th>TYPE</th>
+                        <th>DATE & TIME</th>
+                        <th>POSITION</th>
+                        <th>ODDS</th>
+                        <th>ENTRY</th>
+                        <th>EXIT</th>
+                        <th>P/L</th>
+                    </tr>
+                </thead>
+                <tbody id="tradesTableBody">
+                    <tr>
+                        <td>
+                            <div class="profile-asset-info">
+                                <div><img src="../assets/images/asset-icon.svg" alt=""></div>
+                                <span>ETH/USD</span>
+                            </div>
+                        </td>
+                        <td><span class="profile-badge-type">Forex</span></td>
+                        <td ><span style="font-size: 14px; color: #D1D5DB;">15/09/2023 15:23:54</span></td>
+                        <td style="font-size: 14px; color: #D1D5DB;">Long</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">3.2x</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$1,892.545</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$1,923</td>
+                        <td class="profile-profit">+$31.33</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile-asset-info">
+                                <div><img src="../assets/images/asset-icon.svg" alt=""></div>
+                                <span>SOL/USD</span>
+                            </div>
+                        </td>
+                        <td><span class="profile-badge-type">Crypto</span></td>
+                        <td ><span style="font-size: 14px; color: #D1D5DB;">13/09/2023 17:45:07</span></td>
+                        <td style="font-size: 14px; color: #D1D5DB;">Long</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">3</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$78.34</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$76.12</td>
+                        <td class="profile-loss">-$2.22</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile-asset-info">
+                                <div><img src="../assets/images/asset-icon.svg" alt=""></div>
+                                <span>XRP/USD</span>
+                            </div>
+                        </td>
+                        <td><span class="profile-badge-type">Crypto</span></td>
+                        <td ><span style="font-size: 14px; color: #D1D5DB;">16/09/2023 09:22:15</span></td>
+                        <td style="font-size: 14px; color: #D1D5DB;">Short</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">3.8x</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$1,945.67</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$7,47312</td>
+                        <td class="profile-profit">+$31.33</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="profile-asset-info">
+                                <div><img src="../assets/images/man-che.svg" alt=""></div>
+                                <span>MAN/CHE</span>
+                            </div>
+                        </td>
+                        <td><span class="profile-badge-type">Sports</span></td>
+                        <td>16/09/2023 09:22:15</td>
+                        <td>1X</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">3.8x</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$1,945.67</td>
+                        <td style="font-size: 14px; color: #D1D5DB;">$7,47312</td>
+                        <td class="profile-profit">-+$31.33</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="profile-trades-pagination">
+                <span>Showing <span style="color: #FAFAFA; font-weight: 400;">4</span> trades</span>
+                <div style="margin-left: auto; display: flex; gap: 8px;">
+                    <button>1</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Only prevent default for links with href="#"
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+const ctx = document.getElementById('myChart').getContext('2d');
+
+
+const data = {
+labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+datasets: [
+{
+data: [2000, 2900, 2300, 2500, 2400, 2600, 2200],
+backgroundColor: '#D6BBFB',
+borderRadius: 10,
+borderSkipped: false,
+barThickness: 40, // adjust width
+}
+]
+};
+
+
+const options = {
+responsive: true,
+maintainAspectRatio: false,
+scales: {
+y: {
+min: 0,
+max: 3000,
+ticks: {
+color: '#535862',stepSize: 750,
+font: {
+size: 12 // font size of numbers
+}
+},
+grid: {
+display: false // remove grid lines
+}
+},
+x: {
+ticks: {
+color: '#535862',
+font: {
+size: 12
+}
+},
+grid: {
+display: false
+}
+}
+},
+plugins: {
+legend: {
+display: false,
+},
+}
+};
+
+
+new Chart(ctx, {
+type: 'bar',
+data: data,
+options: options
+});
+</script>
+</body>

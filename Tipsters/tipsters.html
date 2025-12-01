@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="../home.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="../home.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/home.svg" alt="home"></span> Home
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Tipsters/tipsters.html" class="dashboard-nav-link active">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Trades/trades.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/trades.svg" alt="trades"></span> My Trades
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Affiliates/directReferrals.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Community/community.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Settings/profile.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="../home.html" class="mobile-logo">tippin</a>
+        </div>
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+            <div>
+                <h1 class="dashboard-title">Dashboard</h1>
+                <p class="dashboard-subtitle">Welcome back, track your progress and copy trades from top performers</p>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <button class="dashboard-wallet"><span><img src="../assets/images/wallet.svg" alt=""></span> Wallet Balance: $50</button>
+                <div class="d-flex ">
+                    <p class="p-3 rounded-5 mb-0" style="background-color: #8026D933; font-size: 0.75rem;">BW</p>
+                    <select class="dashboard-dropdown">
+                    <option>Billionaire Winners</option>
+                    <option>All Tipsters</option>
+                    <option>Top Rated</option>
+                </select>
+                </div>
+            </div>
+        </div>
+         <!-- TOP PERFORMING TIPSTERS -->
+        <div class="tipsters-discovery-section">
+            <h2 class="tipsters-discovery-title">Top Performing Tipsters</h2>
+            
+            <div class="tipsters-scroll-container">
+                <!-- Featured Tipsters Cards -->
+                <div class="tipsters-featured-card">
+                    <div class="tipsters-featured-avatar mb-2"><img src="../assets/images/alex-thompson.svg" alt=""></div>
+                    <div class="tipsters-featured-name">Alex Thompson</div>
+                    <div class="tipsters-featured-badge"><span style="color: #FAFAFA;">•Verified</span> 2x Odds</div>
+                    <div style="border: 1px solid #333333;" class="p-2 m-0 rounded-3">
+                    <div class="tipsters-featured-stats">
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Win Rate</div>
+                            <div class="tipsters-featured-stat-value">72%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">ROI</div>
+                            <div class="tipsters-featured-stat-value">+18.5%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Followers</div>
+                            <div class="tipsters-featured-stat-value">287</div>
+                        </div>
+                    </div>
+                    <div class="tipsters-featured-price">$1 per trade</div>
+                    <div class="tipsters-featured-actions">
+                        <button class="tipsters-featured-btn tipsters-featured-btn-primary">Copy Trades</button>
+                        <button class="tipsters-featured-btn tipsters-featured-btn-secondary">View Profile</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tipsters-featured-card">
+                    <div class="tipsters-featured-avatar mb-2"><img src="../assets/images/lucas.svg" alt=""></div>
+                    <div class="tipsters-featured-name">Michael Chen</div>
+                    <div class="tipsters-featured-badge"><span style="color: #FAFAFA;">•Verified</span> 4.5x Odds</div>
+                    <div style="border: 1px solid #333333;" class="p-2 m-0 rounded-3">
+                    <div class="tipsters-featured-stats">
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Win Rate</div>
+                            <div class="tipsters-featured-stat-value">72%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">ROI</div>
+                            <div class="tipsters-featured-stat-value">+18.5%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Followers</div>
+                            <div class="tipsters-featured-stat-value">287</div>
+                        </div>
+                    </div>
+                    <div class="tipsters-featured-price">$1 per trade</div>
+                    <div class="tipsters-featured-actions">
+                        <button class="tipsters-featured-btn tipsters-featured-btn-primary">Copy Trades</button>
+                        <button class="tipsters-featured-btn tipsters-featured-btn-secondary">View Profile</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tipsters-featured-card">
+                    <div class="tipsters-featured-avatar mb-2"><img src="../assets/images/sara.svg" alt=""></div>
+                    <div class="tipsters-featured-name">Sarah Johnson</div>
+                    <div class="tipsters-featured-badge"><span style="color: #FAFAFA;">•Verified</span> 2x Odds</div>
+                    <div style="border: 1px solid #333333;" class="p-2 m-0 rounded-3">
+                    <div class="tipsters-featured-stats">
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Win Rate</div>
+                            <div class="tipsters-featured-stat-value">72%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">ROI</div>
+                            <div class="tipsters-featured-stat-value">+18.5%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Followers</div>
+                            <div class="tipsters-featured-stat-value">287</div>
+                        </div>
+                    </div>
+                    <div class="tipsters-featured-price">$1 per trade</div>
+                    <div class="tipsters-featured-actions">
+                        <button class="tipsters-featured-btn tipsters-featured-btn-primary">Copy Trades</button>
+                        <button class="tipsters-featured-btn tipsters-featured-btn-secondary">View Profile</button>
+                    </div>
+                </div>
+                </div>
+                <div class="tipsters-featured-card">
+                    <div class="tipsters-featured-avatar mb-2"><img src="../assets/images/michael.svg" alt=""></div>
+                    <div class="tipsters-featured-name">David Lee</div>
+                    <div class="tipsters-featured-badge"><span style="color: #FAFAFA;">•Verified</span> 3x Odds</div>
+                    <div style="border: 1px solid #333333;" class="p-2 m-0 rounded-3">
+                    <div class="tipsters-featured-stats">
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Win Rate</div>
+                            <div class="tipsters-featured-stat-value">72%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">ROI</div>
+                            <div class="tipsters-featured-stat-value">+18.5%</div>
+                        </div>
+                        <div class="tipsters-featured-stat">
+                            <div class="tipsters-featured-stat-label">Followers</div>
+                            <div class="tipsters-featured-stat-value">287</div>
+                        </div>
+                    </div>
+                    <div class="tipsters-featured-price">$1 per trade</div>
+                    <div class="tipsters-featured-actions">
+                        <button class="tipsters-featured-btn tipsters-featured-btn-primary">Copy Trades</button>
+                        <button class="tipsters-featured-btn tipsters-featured-btn-secondary">View Profile</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Find Tipstar -->
+                        <div class="d-flex justify-content-between mb-4 rounded-5 p-1" style="border: 1px solid #222224;">
+                            <button class="btn btn-tab active fs-6 fw-400 w-50" id="tipsterBtn" style="border: none; background-color: #0F0F0F;">Find a Tipster</button>
+                            <button class="btn btn-tab s-6 fw-400 w-50" id="subscriberBtn"><a href="./findNewTrade.html" style="text-decoration: none; color: #868C98;">Find a new trade</a></button>
+                        </div>
+
+            <!-- Tipsters Results List -->
+            <div class="tipsters-results-list">
+                 <div class="tipsters-filter-tabs">
+                        <button class="tipsters-filter-tab active" data-filter="all">All</button>
+                        <button class="tipsters-filter-tab" data-filter="following">Following</button>
+                        <button class="tipsters-filter-tab" data-filter="recommended">Recommended</button>
+                    </div>
+                <div class="tipsters-search-controls">
+                    <input type="text" class="tipsters-search-input" placeholder="Search tipsters" id="tipsterSearch">
+                    <label class="tipsters-filter-checkbox">
+                        <input type="checkbox" id="verifiedOnly">
+                        Verified only
+                    </label>
+                </div>
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">AT</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Alex Thompson</span>
+                                <span class="tipsters-result-badge"><img src="../assets/images/verified-white.svg" alt="" class="me-1">Verified</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">SC</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Sophia Chen</span>
+                                <span class="tipsters-result-badge"><img src="../assets/images/verified-white.svg" alt="" class="me-1">Verified</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">MW</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Marcus Williams</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">MW</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Marcus Williams</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">MW</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Marcus Williams</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">MW</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Marcus Williams</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">OJ</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Olivia Johnson</span>
+                                <span class="tipsters-result-badge"><img src="../assets/images/verified-white.svg" alt="" class="me-1">Verified</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">OJ</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Olivia Johnson</span>
+                                <span class="tipsters-result-badge"><img src="../assets/images/verified-white.svg" alt="" class="me-1">Verified</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+
+                <div class="tipsters-result-item">
+                    <div class="tipsters-result-info">
+                        <div class="tipsters-result-initials">OJ</div>
+                        <div class="tipsters-result-details">
+                            <div class="tipsters-result-header">
+                                <span class="tipsters-result-name">Olivia Johnson</span>
+                                <span class="tipsters-result-badge"><img src="../assets/images/verified-white.svg" alt="" class="me-1">Verified</span>
+                            </div>
+                            <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
+                        </div>
+                    </div>
+                    <div class="tipsters-result-actions">
+                        <a href="./follow.html" style="text-decoration: none;"><button class="tipsters-result-follow">Follow</button></a>
+                        <a href="./openedPosition.html" class="tipsters-result-link">View Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+             <div class="d-flex justify-content-between align-items-center mt-3 mb-5">
+            <div class="tipsters-showing-text">Showing 10 entries</div>
+            <div class="tipsters-pagination">
+                <button class="tipsters-pagination-btn">1</button>
+                <button class="tipsters-pagination-btn">2</button>
+                <button class="tipsters-pagination-btn">3</button>
+                <button class="tipsters-pagination-btn">4</button>
+                <button class="tipsters-pagination-btn">5</button>
+            </div>
+            </div>
+        </div>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // Only prevent default for links with href="#"
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+</body>
