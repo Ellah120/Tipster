@@ -11,25 +11,25 @@
 <body>
     <!-- SIDEBAR -->
     <div class="dashboard-sidebar">
-        <a href="../Home/no-subscription.html" class="dashboard-logo">tippin</a>
+        <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
         <ul class="dashboard-nav pt-4 ps-0">
             <li class="dashboard-nav-item">
-                <a href="../Home/no-subscription.html" class="dashboard-nav-link">
-                    <span><img src="../assets/images/home.svg" alt="home"></span> Home
+                <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/dasboard-icon.svg" alt="home"></span> Dashboard
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Tipsters/tipsters.html" class="dashboard-nav-link">
-                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                <a href="../MyTips/allTips.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> My Tips
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Trades/trades.html" class="dashboard-nav-link">
-                    <span><img src="../assets/images/trades.svg" alt="trades"></span> My Trades
+                <a href="../Verification/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/verification-badge.svg" alt="trades"></span> Verification
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Affiliates/directReferrals.html" class="dashboard-nav-link active">
+                <a href="../SubscriberAffiliates/affiliates.html" class="dashboard-nav-link active">
                     <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
                 </a>
             </li>
@@ -49,75 +49,63 @@
     <!-- MAIN CONTENT -->
     <div class="dashboard-main">
         <!-- MOBILE HEADER -->
-        <div class="mobile-header d-lg-none">
+         <div class="mobile-header d-lg-none">
             <button class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <a href="../Home/no-subscription.html" class="mobile-logo">tippin</a>
+            <a href="../SubscriberDashboard/startChallenge.html" class="mobile-logo">tippin</a>
         </div>
 
         <!-- HEADER -->
-        <div class="dashboard-header">
+        <div class="">
             <div>
                 <h1 class="dashboard-title">Affiliate Program</h1>
                 <p class="dashboard-subtitle">Earn commissions by referring traders to Kuja</p>
             </div>
-            <div class="d-flex align-items-center gap-4">
-                <button class="dashboard-wallet"><span><img src="../assets/images/wallet.svg" alt=""></span> Wallet Balance: $50</button>
-                <div class="d-flex ">
-                    <p class="p-3 rounded-5 mb-0" style="background-color: #8026D933; font-size: 0.75rem;">BW</p>
-                    <select class="dashboard-dropdown">
-                    <option>Billionaire Winners</option>
-                    <option>All Tipsters</option>
-                    <option>Top Rated</option>
-                </select>
-                </div>
-            </div>
         </div>
         <!-- TRADING PERFORMANCE SECTION -->
         <div class="trades-performance-container">
-            <div style="border: 1px solid #333333;" class="mb-3 rounded-4">
-            <h2 class="trades-section-title">Affiliate Performance</h2>
-            
-            <!-- Performance Stats Grid -->
-            <div class="row g-3 mb-4">
-                <div class="col-4 col-md-4 ">
-                    <div class="trades-metric-card">
-                        <div class="trades-metric-label">Direct Referrals</div>
-                        <div class="trades-metric-value">32</div>
-                    </div>
-                </div>
-                <div class="col-4 col-md-4">
-                    <div class="trades-metric-card">
-                        <div class="trades-metric-label">Indirect Refereals</div>
-                        <div class="trades-metric-value">448</div>
-                    </div>
-                </div>
-                <div class="col-4 col-md-4">
-                    <div class="trades-metric-card border-0">
-                        <div class="trades-metric-label">Total Earning</div>
-                        <div class="trades-metric-value">+$528</div>
-                    </div>
-                </div>
-            </div>
-            </div>
             <!-- How it works -->
              <div style="width: 100%; border: 1px solid #333333;" class="affiliate-tabs rounded-3 mb-3">
-                <div>
+                <div class="d-block d-lg-flex justify-content-between">
+                    <div class="full-width-affiliatesub">
+                <div class="mb-5">
                     <p style="font-size: 18px; font-weight: 500; color: #FAFAFA; margin: 0;">How it Works</p>
                     <p style="color: #9CA3AF; font-size: 12px;">Share your unique referral link and earn a percentage of the trading fees generated by the traders</p>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between my-3">
                     <div>
                         <p style="font-weight: 700; color: #FAFAFA; margin: 0;">1 Tier 1: Direct Referrals</p>
-                        <p style="font-size: 12px; font-weight: 400;">Earn 20% of the trading fees from traders you directly refer to Kuja</p>
+                        <p style="font-size: 12px; font-weight: 400;" class="mb-md-0 mb-3">Earn 20% of the trading fees from traders you directly refer to Kuja</p>
                     </div>
                     <div>
                         <p style="font-weight: 700; color: #FAFAFA; margin: 0;">2 Tier 2: Indirect Referrals</p>
-                        <p style="font-size: 12px; font-weight: 400;">Earn 10% of the trading fees from traders referred by your direct referrals.</p>
+                        <p style="font-size: 12px; font-weight: 400;" class="mb-0">Earn 10% of the trading fees from traders referred by your direct referrals.</p>
                     </div>
+                </div>
+                </div>
+                <div class="ms-lg-3 full-width-affiliate">
+                  <p style="font-size: 16px; font-weight: 700; color: #FAFAFA; margin: 0;">Your Affiliate Stats</p>  
+                  <div class="d-flex justify-content-between">
+                    <p style="font-size: 14px; color: #9CA3AF;">Total Referrals</p>
+                    <p style="font-size: 20px; font-weight: 700; color: #FAFAFA;">18</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p style="font-size: 14px; color: #9CA3AF;">Active Referrals</p>
+                    <p style="font-size: 20px; font-weight: 700; color: #FAFAFA;">12</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <p style="font-size: 14px; color: #9CA3AF;">Total Earnings</p>
+                    <p style="font-size: 20px; font-weight: 700; color: #FAFAFA;">$89.50</p>
+                  </div>
+                  <div class="d-flex justify-content-between pt-2" style="border-top: 1px solid #333333;">
+                    <p style="font-size: 14px; color: #9CA3AF;" class="mb-0">Monthly Earnings</p>
+                    <p style="font-size: 20px; font-weight: 400; color: #FAFAFA;" class="mb-0">+$31.33</p>
+                  </div>
+                  <p style="color: #D1D5DB; font-size: 12px;" class="mb-0 text-end">+24%</p>
+                </div>
                 </div>
                 <div>
                     <p style="font-size: 14px; color: #FAFAFA; margin-bottom: 5px;">Your Referral Link</p>
@@ -130,22 +118,10 @@
              </div>
 
             <!-- Referral Table Container -->
+             <div class="d-flex gap-3 align-items-center">
              <p style="color: #FAFAFA;">My Referrals</p>
-             <!-- Referral Types -->
-                <div class="d-flex flex-column flex-md-row justify-content-between ">
-                    <div class="gap-3 d-flex align-items-lg-center">
-                    <button class="trades-tab-btn active" data-tab="all">Direct Referrals</button>
-                    <a href="./indirectReferrals.html" style="text-decoration: none;"><button class="trades-tab-btn" data-tab="open">Indirect Referrals</button></a>
-                    </div>
-                    <div class="gap-3 d-flex align-items-center">
-                        <p style="font-size: 12px; color: #414651;">Filter by</p>
-                        <select class="mb-3 p-2 rounded-3" style="font-size: 12px; background: transparent; color: #D1D5DB;">
-                            <option disabled selected>select</option>
-                            <option>Tier</option>
-                            <option>Status</option>
-                        </select>
-                    </div>
-                </div>
+              <p style="color: #9CA3AF; font-size: 14px;">Earnings History</p>
+             </div>
             <div class="trades-table-wrapper">
                   <!-- Table -->
                 <div class="trades-table-scroll">

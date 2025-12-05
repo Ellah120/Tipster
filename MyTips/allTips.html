@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/dasboard-icon.svg" alt="home"></span> Dashboard
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../MyTips/allTips.html" class="dashboard-nav-link active">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> My Tips
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Verification/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/verification-badge.svg" alt="trades"></span> Verification
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../SubscriberAffiliates/affiliates.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Community/community.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Settings/profile.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="../SubscriberDashboard/startChallenge.html" class="mobile-logo">tippin</a>
+        </div>
+
+        <!-- HEADER -->
+         <div class="d-block d-md-flex justify-content-between">
+            <div>
+                <h1 class="dashboard-title">My Tips</h1>
+                <p class="dashboard-subtitle">View and manage your tips</p>
+            </div>
+            <div class="d-flex align-items-center gap-4 mb-4">
+                <button class="" style="color: #FAFAFA; font-size: 14px; font-weight: 500; background-color: transparent; padding: 8px 10px; border: 1px solid #333333; border-radius: 6px;"><span><img src="../assets/images/download-icon.svg" alt=""></span> Export History</button>
+                    <button style="color: #FAFAFA; font-size: 14px; font-weight: 500; padding: 8px 10px; background-color: #8026D9; border-radius: 6px; border: none;">+ New Tip</button>
+            </div>
+        </div>
+      
+         <!-- RECENT TRADES -->
+           <div class="dashboard-trades-card">
+                    <div class="table-responsive">
+                        <div style="font-size: 14px; color: #9CA3AF;" class="d-flex align-items-center ps-3 pt-4 gap-4">
+                            <a href="./allTips.html" style="text-decoration: none;"><p style="color: #FAFAFA;">All Tips</p></a>
+                            <a href="./openPositions.html" style="text-decoration: none; color: #9CA3AF;"><p>Open Positions</p></a>
+                            <a href="./closedPositions.html" style="text-decoration: none; color: #9CA3AF;"><p>Closed Positions</p></a>
+                        </div>
+                    <table class="dashboard-trades-table">
+                        <thead>
+                            <tr>
+                                <th class="pt-3" style="white-space: nowrap;">DATE & TIME</th>
+                                <th class="pt-3" style="white-space: nowrap;">ASSET</th>
+                                <th class="pt-3" style="white-space: nowrap;">TYPE</th>
+                                <th class="pt-3" style="white-space: nowrap;">ODDS</th>
+                                <th class="pt-3" style="white-space: nowrap;">POSITION</th>
+                                <th class="pt-3" style="white-space: nowrap;">ENTRY</th>
+                                <th class="pt-3" style="white-space: nowrap;">EXIT</th>
+                                <th class="pt-3" style="white-space: nowrap;">STOP LOSS</th>
+                                <th class="pt-3" style="white-space: nowrap;">P/L</th>
+                                <th class="pt-3" style="white-space: nowrap;">COPIERS</th>
+                                <th class="pt-3" style="white-space: nowrap;">EARNED FROM COIERS</th>
+                                <th class="pt-3" style="white-space: nowrap;">STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="white-space: nowrap;">15/09/2023 15:23:54</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> ETH/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Crypto</span></td>
+                                <td>4x</td>
+                                <td>Long</td>
+                                <td>$1,892.545</td>
+                                <td>$1,923</td>
+                                <td>$1,500</td>
+                                <td>+$31.33</td>
+                                <td>200</td>
+                                <td>$200</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td style="white-space: nowrap;">14/09/2023 10:12:32</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> BTC/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Crypto</span></td>
+                                <td>8x</td>
+                                <td>Short</td>
+                                <td>$39,245.00</td>
+                                <td>$38,956.00</td>
+                                <td>$35000</td>
+                                <td>+$288.75</td>
+                                <td>103</td>
+                                <td>$103</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td style="white-space: nowrap;">13/09/2023 17:45:07</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> SOL/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Forex</span></td>
+                                <td>3x</td>
+                                <td>Long</td>
+                                <td>$78.34</td>
+                                <td>$76.12</td>
+                                <td>$50</td>
+                                <td>-$2.22</td>
+                                <td>-50</td>
+                                <td>-$0</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td style="white-space: nowrap;">12/09/2023 12:33:21</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/man-che.svg" alt="asset"></span> MAN/CHE</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Sports</span></td>
+                                <td>6x</td>
+                                <td>Single</td>
+                                <td>2x</td>
+                                <td>$0.58</td>
+                                <td>-</td>
+                                <td>-$1</td>
+                                <td>20</td>
+                                <td>-$0</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td style="white-space: nowrap;">16/09/2023 09:22:15</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/man-che.svg" alt="asset"></span> MAN/CHE</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Sports</span></td>
+                                <td>7x</td>
+                                <td>Multiple</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>120</td>
+                                <td>-</td>
+                                <td><span style="color: #164564; background-color: #E2E4E9; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Open</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div style="margin-top: 1.25rem;" class="px-3 pb-4 d-flex justify-content-between align-items-center">
+                        <p class="dashboard-trades-link m-0" style="color: #A1A1AA; font-size: 12px;">Showing <span style="color: #FAFAFA;">5</span> trades</p>
+                        <div class="">
+                     <p class="m-0" style="color: #FAFAFA; border: 1px solid #333333; padding: 6px 12px; border-radius: 4px;">1</p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+    <script>
+  const ctx = document.getElementById("weeklyChart").getContext("2d");
+
+  const weeklyChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [{
+        label: "Weekly Data",
+        data: [],
+        
+        borderColor: "rgba(0, 255, 120, 0.9)",
+        backgroundColor: "rgba(0, 255, 120, 0.1)",
+        
+        borderWidth: 2,
+        tension: 0.4, /* smooth curve */
+        fill: false,
+        pointRadius: 0, /* remove dots */
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          ticks: { color: "#535862", font: {
+            size: 12
+            } },
+          grid: { display: false }
+        },
+        y: {
+          min: 0,
+          max: 3000,
+          ticks: { color: "#535862" , stepSize: 750, font: {
+            size: 12
+            } },
+          grid: { display: false }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-nav-link active">
+                    <span><img src="../assets/images/dasboard-icon.svg" alt="home"></span> Dashboard
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../MyTips/allTips.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> My Tips
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Verification/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/verification-badge.svg" alt="trades"></span> Verification
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../SubscriberAffiliates/affiliates.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Community/community.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Settings/profile.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="../SubscriberDashboard/startChallenge.html" class="mobile-logo">tippin</a>
+        </div>
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+            <div>
+                <h1 class="dashboard-title">Dashboard</h1>
+                <p class="dashboard-subtitle">Your performance at a glance</p>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <button class="dashboard-wallet"><span><img src="../assets/images/wallet.svg" alt=""></span> Wallet Balance: $50,000</button>
+                <div class="d-flex ">
+                    <p class="p-3 rounded-5 mb-0" style="background-color: #8026D933; font-size: 0.75rem;">BW</p>
+                    <select class="dashboard-dropdown">
+                    <option>Billionaire Winners</option>
+                    <option>All Tipsters</option>
+                    <option>Top Rated</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <!-- NO SUBSCRIPTION -->
+         <div style="width: 100%; background-color: #1CCB5C33; border: 1px solid #4ADE80; border-radius: 12px;" class="p-3 mb-5 d-flex justify-content-between align-items-center">
+            <div>
+                <p style="font-size: 18px; font-family: 500; color: #4ADE80;" class="mb-0 d-md-flex d-block align-items-center">You are a Verified Tipster <span style="padding: 2px 6px; background-color: #16A34A; color: #FAFAFA; font-size: 12px; border-radius: 10px; display: inline-block;" class="ms-md-1">Odds tier: 4x</span></p>
+                <p style="color: #FAFAFA; font-size: 12px;margin-bottom: 0;">You have completed the 10-tips challenge for your odds tier. Keep it up!</p>
+            </div>
+           <button style="font-size: 14px; font-weight: 500; background-color: #8026D9; padding: 8px 10px; border-radius: 10px; border: none; color: #FAFAFA;">+ New Tip</button>
+         </div>
+ <!-- MAIN CONTENT ROW -->
+   <div class="profile-header">
+            <div class="profile-info-row">
+                <!-- Avatar & Basic Info -->
+                <div class="profile-avatar-section">
+                    <img src="../assets/images/profile-pic.svg" alt="Alex Thompson" class="profile-avatar">
+                    <div class="profile-name">Alex Thompson</div>
+                    <div class="profile-odds mt-2">3X odds</div>
+                    <div class="profile-followers">
+                        <div class="profile-followers-item">
+                            <div class="profile-followers-label">Followers <span style="color: #FAFAFA; font-size: 14;" class="ms-1">200</span></div>
+                        </div>
+                        <div class="profile-followers-item">
+                            <div class="profile-followers-label">Following <span style="color: #FAFAFA; font-size: 14;" class="ms-1">12</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                 <div class="d-block">
+                <div class="profile-stats-grid">
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Win Rate</div>
+                        <div class="profile-stat-value positive">68.5%</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Total Tips</div>
+                        <div class="profile-stat-value">320</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Total Profit</div>
+                        <div class="profile-stat-value">+$44,258</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Total Loss</div>
+                        <div class="profile-stat-value">-$187.6</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">ROI</div>
+                        <div class="profile-stat-value positive">+19.5%</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Long Positions</div>
+                        <div class="profile-stat-value">170</div>
+                    </div>
+                    <div class="profile-stat-card">
+                        <div class="profile-stat-label">Short Positions</div>
+                        <div class="profile-stat-value">-150</div>
+                    </div>
+                    <!-- Action Buttons -->
+            </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div>
+            <p style="color: #FAFAFA;" class="mb-0">Assets Traded</p>
+            <div class="w-100 d-flex mt-2 mb-3">
+               <span style="width: 60%; background-color: #1CCB5C33; font-size: 12px; text-align: center;" class="rounded-start-4 py-1 d-flex d-md-block align-items-center justify-content-center">Crypto (62%)</span>
+                <span style="width: 20%; background-color: #8026D933; font-size: 12px; text-align: center;" class=" py-1 d-flex d-md-block align-items-center justify-content-center">Stocks (22%)</span>
+                <span style="width: 20%; background-color: #F7C63033; font-size: 12px; text-align: center;" class="rounded-end-4 py-1 d-flex d-md-block align-items-center justify-content-center">Forex(16%)</span>
+            </div>
+        </div>
+            <!-- LEFT COLUMN -->
+        <!-- STATS ROW -->
+         <div class="row g-3">
+            <div class="col-lg-8">
+            
+                <!-- PERFORMANCE CHART -->
+                <div class="dashboard-chart-card">
+                    <div class="dashboard-chart-header">
+                        <div class="dashboard-chart-title">
+                        Performance Overview <span style="color: #4ADE80; font-size: 0.875rem; background-color: #1CCB5C33; padding: 0.1875rem; border-radius: 0.3125rem;"><img src="../assets/images/trend-icon.svg" alt="trend" class="me-1">+42.86%</span>
+                        </div>
+                        <div class="dashboard-chart-time">
+                            <button class="dashboard-chart-btn active">1W</button>
+                            <button class="dashboard-chart-btn">1M</button>
+                            <button class="dashboard-chart-btn">3M</button>
+                            <button class="dashboard-chart-btn">1Y</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-chart-placeholder border-bottom-0">
+                        <div class="container mt-5">
+                            <div class="chart-container px-2">
+                             <canvas id="weeklyChart"></canvas>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="dashboard-chart-stats">
+                        <div class="dashboard-chart-stat">
+                            <div class="dashboard-chart-stat-label"><span><img src="../assets/images/trend-icon.svg" alt="win-rate"></span> Win Rate</div>
+                            <div class="dashboard-chart-stat-value" style="color: #4ADE80;">68.5%</div>
+                        </div>
+                        <div class="dashboard-chart-stat">
+                            <div class="dashboard-chart-stat-label"><span><img src="../assets/images/avg-return.svg" alt="avg-return"></span> Avg. Return</div>
+                            <div class="dashboard-chart-stat-value">7.2%</div>
+                        </div>
+                        <div class="dashboard-chart-stat">
+                            <div class="dashboard-chart-stat-label"><span><img src="../assets/images/right-arrow.svg" alt="total-trade"></span> Total Trades</div>
+                            <div class="dashboard-chart-stat-value">32 <span style="font-size: 0.625rem; color: #4ADE80;">+5 this week</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="col-lg-4">
+                <!-- TOP TIPSTERS -->
+                <div class="dashboard-tipsters-card-verified">
+                    <h3 class="dashboard-trades-title mb-3" style="color: #FAFAFA; border-bottom: 1px solid #333333; padding: 1.5rem;">Stats</h3>
+
+                    <!-- Tipster Items -->
+                   <div style="margin: 1.5rem;">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div>
+                            <p style="font-size: 18px; font-weight: 600; color: #4ADE80;" class="m-0">12.22%</p>
+                            <p style="font-size: 12px; color: #D1D5DB;" class="m-0">Avg Daily Profit (%)</p>
+                        </div>
+                        <div>
+                            <p style="font-size: 18px; font-weight: 600; color: #4ADE80;" class="m-0">1.29%</p>
+                            <p style="font-size: 12px; color: #D1D5DB;" class="m-0">Avg Monthly Profit (%)</p>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap">
+                        <p style="font-size: 12px; color: #9CA3AF; border-bottom: 3px solid #16A34A; width: 60%;" class="mb-0 pb-1">Profitable tips(71%)</p>
+                        <p style="font-size: 12px; color: #9CA3AF; border-bottom: 3px solid #DC2626; width: 40%;" class="mb-0 pb-1">(29%)Losing tips</p>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap">
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">Deposits ($)</p>
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">$2345</p>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap">
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">Withdrawals ($)</p>
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">$1220</p>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap">
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">Open Positions ($)</p>
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">-$10,314</p>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap">
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">Live Copiers</p>
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">-240</p>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap">
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">Best Tip ($)</p>
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">+$2,345</p>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap" style="border-bottom: 1px solid #333333;">
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">Worst Tip ($)</p>
+                        <p style="font-size: 12px; color: #9CA3AF; margin-bottom: 0;">-$245</p>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between flex-wrap mb-0">
+                        <p style="font-size: 12px; color: #9CA3AF;" class="mb-0">Avg. Monthly Earnings</p>
+                        <p style="font-size: 12px; color: #9CA3AF;" class="mb-0">-+$31.33</p>
+                    </div>
+                    <p class="mb-0" style="font-size: 10px; color: #4ADE80; text-align: end;"><img src="../assets/images/trend-icon.svg" alt="">+42.86% </p>
+                   </div>
+                </div>
+            </div>
+        </div>
+         <!-- RECENT TRADES -->
+           <h3 class="dashboard-trades-title px-3 pt-3 pb-0">Recent Tips</h3>
+                    <p class="dashboard-trades-subtitle px-3 pt-0 border-0">Your latest tipping activity</p>
+                <div class="dashboard-trades-card">
+                    <div class="table-responsive">
+                    <table class="dashboard-trades-table">
+                        <thead>
+                            <tr>
+                                <th class="pt-3">DATE & TIME</th>
+                                <th class="pt-3">ASSET</th>
+                                <th class="pt-3">TYPE</th>
+                                <th class="pt-3">POSITION</th>
+                                <th class="pt-3">ODDS</th>
+                                <th class="pt-3">ENTRY</th>
+                                <th class="pt-3">EXIT</th>
+                                <th class="pt-3">STOP LOSS</th>
+                                <th class="pt-3">P/L</th>
+                                <th class="pt-3">STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15/09/2023 15:23:54</td>
+                                <td><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> ETH/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Crypto</span></td>
+                                <td>Long</td>
+                                <td>3.2x</td>
+                                <td>$1,892.545</td>
+                                <td>$1,923</td>
+                                <td>$1,400</td>
+                                <td style="color: #4ADE80;">+$31.33</td>
+                                <td><span style="color: #F87171; background-color: #1CCB5C33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>13/09/2023 17:45:07</td>
+                                <td><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> SOL/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Forex</span></td>
+                                <td>Long</td>
+                                <td>3</td>
+                                <td>$78.34</td>
+                                <td>$76.12</td>
+                                <td>$60</td>
+                                <td style="color: #F87171;">-$2.22</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>16/09/2023 09:22:15</td>
+                                <td><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> XRP/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Sport</span></td>
+                                <td>Short</td>
+                                <td>3.8x</td>
+                                <td>$1,945.67</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><span style="color: #164564; background-color: #E2E4E9; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Open</span></td>
+                            </tr>
+                            <tr>
+                                <td>16/09/2023 09:22:15</td>
+                                <td><span><img src="../assets/images/man-che.svg" alt="asset"></span> MAN/CHE</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Crypto</span></td>
+                                <td>1X</td>
+                                <td>3.8x</td>
+                                <td>$1,945.67</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><span style="color: #164564; background-color: #E2E4E9; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Open</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div style="margin-top: 1.25rem;" class="px-3 pb-4 d-flex justify-content-between align-items-center">
+                        <a href="#" class="dashboard-trades-link">View all trades</a>
+                        <p class="m-0" style="color: #FAFAFA; border: 1px solid #333333; padding: 6px 12px; border-radius: 4px;">1</p>
+                    </div>
+                </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+    <script>
+  const ctx = document.getElementById("weeklyChart").getContext("2d");
+
+  const weeklyChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [{
+        label: "Weekly Data",
+        data: [2000, 2050, 2100, 2200, 2250, 2400, 2700],
+        
+        borderColor: "rgba(0, 255, 120, 0.9)",
+        backgroundColor: "rgba(0, 255, 120, 0.1)",
+        
+        borderWidth: 2,
+        tension: 0.4, /* smooth curve */
+        fill: false,
+        pointRadius: 0, /* remove dots */
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          ticks: { color: "#535862", font: {
+            size: 12
+            } },
+          grid: { display: false }
+        },
+        y: {
+          min: 0,
+          max: 3000,
+          ticks: { color: "#535862" , stepSize: 750, font: {
+            size: 12
+            } },
+          grid: { display: false }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tippin - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="dashboard-sidebar">
+        <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
+        <ul class="dashboard-nav pt-4 ps-0">
+            <li class="dashboard-nav-item">
+                <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/dasboard-icon.svg" alt="home"></span> Dashboard
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../MyTips/allTips.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> My Tips
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Verification/startChallenge.html" class="dashboard-nav-link active">
+                    <span><img src="../assets/images/verification-badge.svg" alt="trades"></span> Verification
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../SubscriberAffiliates/affiliates.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Community/community.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/community.svg" alt="community"></span> Community
+                </a>
+            </li>
+            <li class="dashboard-nav-item">
+                <a href="../Settings/profile.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="dashboard-main">
+        <!-- MOBILE HEADER -->
+        <div class="mobile-header d-lg-none">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="../SubscriberDashboard/startChallenge.html" class="mobile-logo">tippin</a>
+        </div>
+
+        <!-- HEADER -->
+        <div class="">
+            <div>
+                <h1 class="dashboard-title">Tipster Verification</h1>
+                <p class="dashboard-subtitle">Complete the 10-tips verification challenge to become a verified tipster on Tippin</p>
+            </div>
+        </div>
+        <!-- NO SUBSCRIPTION -->
+         <div style="width: 100%; background-color: #1CCB5C33; border: 1px solid #4ADE80; border-radius: 12px;" class="p-3 mb-3 d-flex justify-content-between align-items-center">
+            <div>
+                <p style="font-size: 18px; font-family: 500; color: #4ADE80;" class="mb-0 d-md-flex d-block align-items-center">You are a Verified Tipster <span style="padding: 2px 6px; background-color: #16A34A; color: #FAFAFA; font-size: 12px; border-radius: 10px; display: inline-block;" class="ms-md-1">Odds tier: 4x</span></p>
+                <p style="color: #FAFAFA; font-size: 12px;margin-bottom: 0;">You have completed the 10-tips challenge for your odds tier. Keep it up!</p>
+            </div>
+           <a href="./lostSubscription.html" style="text-decoration: none;"><button style="font-size: 14px; font-weight: 500; background-color: #8026D9; padding: 8px 10px; border-radius: 10px; border: none; color: #FAFAFA;">+ New Tip</button></a>
+         </div>
+      
+         <!-- RECENT TRADES -->
+           <h3 class="dashboard-trades-title px-3 pt-3 pb-0 text-md-center">Tips History</h3>
+                    <p class="dashboard-trades-subtitle px-3 pt-0 border-0 text-md-center">Your latest Tipping activity</p>
+                <div class="dashboard-trades-card">
+                    <div class="table-responsive">
+                        <div style="font-size: 14px; color: #9CA3AF;" class="d-flex align-items-center ps-3 pt-4 gap-4">
+                            <p style="color: #FAFAFA;">All Tips</p>
+                            <p>Open Positions</p>
+                            <p>Closed Positions</p>
+                        </div>
+                    <table class="dashboard-trades-table">
+                        <thead>
+                            <tr>
+                                <th class="pt-3">DATE & TIME</th>
+                                <th class="pt-3">ASSET</th>
+                                <th class="pt-3">TYPE</th>
+                                <th class="pt-3">ODDS</th>
+                                <th class="pt-3">POSITION</th>
+                                <th class="pt-3">ENTRY</th>
+                                <th class="pt-3">EXIT</th>
+                                <th class="pt-3">STOP LOSS</th>
+                                <th class="pt-3">P/L</th>
+                                <th class="pt-3">STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15/09/2023 15:23:54</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> ETH/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Crypto</span></td>
+                                <td>3X</td>
+                                <td>Long</td>
+                                <td>$1,892.545</td>
+                                <td>$1,923</td>
+                                <td>$1,400</td>
+                                <td>+$31.33</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>13/09/2023 17:45:07</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> BTC/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Forex</span></td>
+                                <td>3x</td>
+                                <td>Short</td>
+                                <td>$39,245.00</td>
+                                <td>$38,956.00</td>
+                                <td>$35000</td>
+                                <td>+$288.75</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>16/09/2023 09:22:15</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> SOL/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Forex</span></td>
+                                <td>4x</td>
+                                <td>Long</td>
+                                <td>$78.34</td>
+                                <td>$76.12</td>
+                                <td>$50</td>
+                                <td>-$2.22</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>12/09/2023 12:33:21</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> XRP/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Sports</span></td>
+                                <td>6x</td>
+                                <td>Short</td>
+                                <td>$0.56</td>
+                                <td>$0.58</td>
+                                <td>-</td>
+                                <td>-$0.01</td>
+                                <td><span style="color: #F87171; background-color: #F15B5B33; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>16/09/2023 09:22:15</td>
+                                <td style="white-space: nowrap;"><span><img src="../assets/images/asset-icon.svg" alt="asset"></span> XRP/USD</td>
+                                <td><span style="border: 1px solid #333333; font-size: 12px; padding: 2px 8px; border-radius: 16px; color: #9CA3AF;">Sports</span></td>
+                                <td>8x</td>
+                                <td>Short</td>
+                                <td>$1,945.67</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td><span style="color: #164564; background-color: #E2E4E9; font-size: 10px; padding: 1px 4px; border-radius: 10px;">Open</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div style="margin-top: 1.25rem;" class="px-3 pb-4 d-flex justify-content-between align-items-center">
+                        <p class="dashboard-trades-link m-0" style="color: #A1A1AA; font-size: 12px;">Showing <span style="color: #FAFAFA;">5</span> trades</p>
+                        <div class="d-flex gap-1">
+                     <p class="m-0" style="color: #FAFAFA; border: 1px solid #333333; padding: 6px 12px; border-radius: 4px;">1</p>
+                    <p class="m-0" style="color: #FAFAFA; border: 1px solid #333333; padding: 6px 12px; border-radius: 4px;">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-lg-flex justify-content-between align-items-center">
+                    <div class="p-3 full-width mb-3 mb-lg-0" style="border: 1px solid #333333; border-radius: 12px;">
+                        <div  class="mb-4">
+                            <p style="font-size: 18px; font-weight: 500; color: #FAFAFA;" class="mb-0">How Verification Works</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Understanding the verification process and benefits</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0">1. Complete 10 Trades/Tips</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Complete 10 trades to demonstrate your skills. Each trade is recorded  for transparency</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0">2. Meet Required Win Rate</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Your required win rate depends on your chosen odds tier. Higher odds tiers require higher win rates but offer better rewards</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0">3. Maintain Your Status</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Once verified, you must maintain your performance to keep your verified status. If your win rate drops below the required threshold, you'll return to verification status.</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0">4. Earn Rewards</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Verified tipsters earn a percentage of fees when other users copy their tips, based on their odds tier and performance.</p>
+                        </div>
+                    </div>
+                    <div class="p-3 full-width" style="border: 1px solid #333333; border-radius: 12px;">
+                        <div  class="mb-4">
+                            <p style="font-size: 18px; font-weight: 500; color: #FAFAFA;" class="mb-0">Benefits of Verification</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Why you should become a verified trader</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/currency-dollar-circle.svg" alt=""> Earn from Copiers</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Earn up to 50% of trading fees when other users cooy your trades</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/shield-tick.svg" alt=""> Verified Badge</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Boost your credibility and trust with copiers</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/trend-icon-white.svg" alt=""> Maintain Your Status</p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Once verified, you must maintain your performance to keep your verified status. If your win rate drops below the required threshold, you'll return to verification status.</p>
+                        </div>
+                        <div  class="mb-4">
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"> </p>
+                            <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0"> </p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.querySelector('.dashboard-sidebar');
+        const main = document.querySelector('.dashboard-main');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('open');
+            main.classList.toggle('sidebar-open');
+        });
+
+        document.querySelectorAll('.dashboard-nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (link.getAttribute('href') === '#') {
+                    e.preventDefault();
+                }
+                document.querySelectorAll('.dashboard-nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                
+                // Close sidebar on mobile/tablet when nav link is clicked
+                if (window.innerWidth < 1200) {
+                    menuToggle.classList.remove('active');
+                    sidebar.classList.remove('open');
+                    main.classList.remove('sidebar-open');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dashboard-chart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.dashboard-chart-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                console.log('[v0] Chart period selected:', btn.textContent);
+            });
+        });
+
+        document.querySelectorAll('.dashboard-tipster-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const name = item.querySelector('.dashboard-tipster-name').textContent;
+                console.log('[v0] Tipster clicked:', name);
+            });
+        });
+    </script>
+    <script>
+  const ctx = document.getElementById("weeklyChart").getContext("2d");
+
+  const weeklyChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      datasets: [{
+        label: "Weekly Data",
+        data: [],
+        
+        borderColor: "rgba(0, 255, 120, 0.9)",
+        backgroundColor: "rgba(0, 255, 120, 0.1)",
+        
+        borderWidth: 2,
+        tension: 0.4, /* smooth curve */
+        fill: false,
+        pointRadius: 0, /* remove dots */
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          ticks: { color: "#535862", font: {
+            size: 12
+            } },
+          grid: { display: false }
+        },
+        y: {
+          min: 0,
+          max: 3000,
+          ticks: { color: "#535862" , stepSize: 750, font: {
+            size: 12
+            } },
+          grid: { display: false }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+      }
+    }
+  });
+</script>
+</body>
+</html>
