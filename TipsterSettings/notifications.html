@@ -8,39 +8,39 @@
     <link rel="stylesheet" href="../assets/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body style="background-color: #110019;">
     <!-- SIDEBAR -->
-    <div class="dashboard-sidebar d-flex flex-column justify-content-between">
+     <div class="dashboard-sidebar d-flex flex-column justify-content-between" style="background-color: #110019;">
         <div>
-        <a href="../Home/no-subscription.html" class="dashboard-logo">tippin</a>
+        <a href="../TipsterDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
         <ul class="dashboard-nav pt-4 ps-0">
             <li class="dashboard-nav-item">
-                <a href="../Home/no-subscription.html" class="dashboard-nav-link ">
-                    <span><img src="../assets/images/home.svg" alt="home"></span> Home
+                <a href="../TipsterDashboard/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/dasboard-icon.svg" alt="home"></span> Dashboard
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Tipsters/tipsters.html" class="dashboard-nav-link">
-                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                <a href="../MyTips/allTips.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> My Tips
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Trades/trades.html" class="dashboard-nav-link">
-                    <span><img src="../assets/images/trades.svg" alt="trades"></span> My Trades
+                <a href="../Verification/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/verification-badge.svg" alt="trades"></span> Verification
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Affiliates/directReferrals.html" class="dashboard-nav-link">
+                <a href="../TipsterAffiliates/affiliates.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Community/community.html" class="dashboard-nav-link">
+                <a href="../TipsterCommunity/community.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/community.svg" alt="community"></span> Community
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Settings/profile.html" class="dashboard-nav-link active">
+                <a href="../TipsterSettings/profile.html" class="dashboard-nav-link active">
                     <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
                 </a>
             </li>
@@ -51,7 +51,7 @@
             </li>
         </ul>
         </div>
-            <div class="d-flex align-items-end ps-2" style="font-size: 12px; "><a href="../TipsterDashboard/startChallenge.html" class="text-decoration-underline" style="color: #c19ae7;">Switch to Tipster dashboard</a></div>
+        <div class="d-flex align-items-end ps-2" style="font-size: 12px; "><a href="../Home/no-subscription.html" class="text-decoration-underline" style="color: #c19ae7;">Switch to Subscriber dashboard</a></div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -63,13 +63,13 @@
                 <span></span>
                 <span></span>
             </button>
-            <a href="../Home/no-subscription.html" class="mobile-logo">tippin</a>
+            <a href="../TipsterDashboard/startChallenge.html" class="mobile-logo">tippin</a>
         </div>
 
         <!-- HEADER -->
         <div class="dashboard-header-account mb-0">
             <div class="">
-                <h1 class="dashboard-title">Subscriber Settings</h1>
+                <h1 class="dashboard-title">Tipster Settings</h1>
                 <p class="dashboard-subtitle">Manage your account and preferences</p>
             </div>
         </div>
@@ -78,82 +78,71 @@
             <!-- Account tabs navigation -->
             <div class="account-tabs-container">
                 <a href="./profile.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="profile">Profile</button></a>
-                <a href="./inactiveSubscription.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="subscriptions">Subscriptions</button></a>
                 <a href="./wallet.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="wallet">Wallet</button></a>
-                <a href="./notifications.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="notifications">Notifications</button></a>
-                <a href="./security.html" style="text-decoration: none;"><button class="account-tab-btn account-tab-active" data-tab="security">Security</button></a>
+                <a href="./notifications.html" style="text-decoration: none;"><button class="account-tab-btn account-tab-active" data-tab="notifications">Notifications</button></a>
+                <a href="./security.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="security">Security</button></a>
             </div>
-            <!-- Security Settings Tab Content -->
+            <!-- Notification Settings Tab Content -->
              <div style="padding: 24px 16px; border: 1px solid #333333; border-radius: 12px;">
-            <div id="security-tab" class="sec-settings-container">
-                <div class="sec-settings-header">
-                    <h2 class="sec-settings-title">Security Settings</h2>
-                    <p class="sec-settings-description">Manage your account security and authentication methods</p>
+            <div class="notif-settings-container">
+                <div class="notif-settings-header">
+                    <h2 class="notif-settings-title">Notification Settings</h2>
+                    <p class="notif-settings-description">Manage how and when you receive notifications</p>
                 </div>
 
-                <!-- Two-Factor Authentication Section -->
-                <div class="sec-section">
-                    <div class="sec-section-header">
-                        <div>
-                            <h3 class="sec-section-title">Two-Factor Authentication</h3>
-                            <p class="sec-section-description">Add an extra layer of security to your account</p>
+                <div class="notif-items-list">
+                    <div class="notif-item">
+                        <div class="notif-item-content">
+                            <div class="notif-item-title">Email Notifications</div>
+                            <div class="notif-item-description">Receive alerts and updates via email</div>
                         </div>
-                        <button class="sec-2fa-button">Enable 2fa</button>
-                    </div>
-                </div>
-
-                <!-- Password Section -->
-                <div class="sec-section">
-                    <h3 class="sec-section-title mb-3">Password</h3>
-                    <div class="d-block d-md-flex flex-md-wrap justify-content-between">
-                    <div class="sec-form-group">
-                        <label class="sec-form-label">Current Password</label>
-                        <input type="password" class="sec-form-input">
-                    </div>
-
-                    <div class="sec-form-group">
-                        <label class="sec-form-label">New Password</label>
-                        <input type="password" class="sec-form-input">
-                    </div>
-                    <div class="sec-form-group">
-                        <label class="sec-form-label">Confirm New Password</label>
-                        <input type="password" class="sec-form-input">
-                    </div>
-                    </div>
-                    <button class="sec-change-password-btn">Change Password</button>
-                </div>
-
-                <!-- Login History Section -->
-                <div class="sec-section">
-                    <h3 class="sec-section-title">Login History</h3>
-                    
-                    <div class="sec-login-item">
-                        <div class="sec-login-info">
-                            <div class="sec-login-session">Current Session</div>
-                            <div class="sec-login-details">Chrome on Windows. New York, USA</div>
-                        </div>
-                        <div class="sec-login-status">
-                            <span class="sec-status-badge sec-status-active">Active</span>
+                        <div class="notif-toggle-container">
+                            <img src="../assets/images/toggle-on.svg" alt="">
                         </div>
                     </div>
 
-                    <div class="sec-login-item">
-                        <div class="sec-login-info">
-                            <div class="sec-login-session">Previous Login</div>
-                            <div class="sec-login-details">Chrome on Windows. New York, USA</div>
+                    <div class="notif-item">
+                        <div class="notif-item-content">
+                            <div class="notif-item-title">Trade Copy Notifications</div>
+                            <div class="notif-item-description">Get notified when traders you follow execute trades</div>
                         </div>
-                        <div class="sec-login-timestamp">Yesterday, 15:32</div>
+                        <div class="notif-toggle-container">
+                            <img src="../assets/images/toggle-on.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="notif-item">
+                        <div class="notif-item-content">
+                            <div class="notif-item-title">New Followers</div>
+                            <div class="notif-item-description">Get notified when someone follows your trading activity</div>
+                        </div>
+                        <div class="notif-toggle-container">
+                            <img src="../assets/images/toggle-on.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="notif-item">
+                        <div class="notif-item-content">
+                            <div class="notif-item-title">Market Updates</div>
+                            <div class="notif-item-description">Receive notifications about market movements and news</div>
+                        </div>
+                        <div class="notif-toggle-container">
+                            <img src="../assets/images/toggle-off.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="notif-item">
+                        <div class="notif-item-content">
+                            <div class="notif-item-title">Security Alerts</div>
+                            <div class="notif-item-description">Get notified about important security events</div>
+                        </div>
+                        <div class="notif-toggle-container">
+                            <img src="../assets/images/toggle-on.svg" alt="">
+                        </div>
                     </div>
                 </div>
 
-                <!-- Account Actions Section -->
-                <div class="sec-section">
-                    <h3 class="sec-section-title">Account Actions</h3>
-                    <div class="sec-actions-container">
-                        <button class="sec-download-data-btn">Download Personal Data</button>
-                        <button class="sec-deactivate-account-btn">Deactivate Account</button>
-                    </div>
-                </div>
+                <button class="notif-save-button">Save Notification Settings</button>
             </div>
         </div>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

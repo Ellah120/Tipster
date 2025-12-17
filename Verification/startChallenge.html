@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="../assets/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body style="background-color: #110019; height: 100%;">
     <!-- SIDEBAR -->
-    <div class="dashboard-sidebar">
-        <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
+    <div class="dashboard-sidebar d-flex flex-column justify-content-between" style="background-color: #110019;">
+        <div style="background-color: #110019;">
+        <a href="../TipsterDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
         <ul class="dashboard-nav pt-4 ps-0">
             <li class="dashboard-nav-item">
-                <a href="../SubscriberDashboard/startChallenge.html" class="dashboard-nav-link">
+                <a href="../TipsterDashboard/startChallenge.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/dasboard-icon.svg" alt="home"></span> Dashboard
                 </a>
             </li>
@@ -29,21 +30,28 @@
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../SubscriberAffiliates/affiliates.html" class="dashboard-nav-link">
+                <a href="../TipsterAffiliates/affiliates.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Community/community.html" class="dashboard-nav-link">
+                <a href="../TipsterCommunity/community.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/community.svg" alt="community"></span> Community
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Settings/profile.html" class="dashboard-nav-link">
+                <a href="../TipsterSettings/profile.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
                 </a>
             </li>
+            <li class="dashboard-nav-item">
+                <a href="../login.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/out.png" " alt="settings"></span> Sign Out
+                </a>
+            </li>
         </ul>
+        </div>
+        <div class="d-flex align-items-end ps-2" style="font-size: 12px; "><a href="../Home/no-subscription.html" class="text-decoration-underline" style="color: #c19ae7;">Switch to Subscriber dashboard</a></div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -55,7 +63,7 @@
                 <span></span>
                 <span></span>
             </button>
-            <a href="../SubscriberDashboard/startChallenge.html" class="mobile-logo">tippin</a>
+            <a href="../TipsterDashboard/startChallenge.html" class="mobile-logo">tippin</a>
         </div>
 
         <!-- HEADER -->
@@ -73,7 +81,7 @@
             </div>
             <div class="d-flex gap-4 ps-md-4 ps-0 align-items-center mt-md-0 mt-2" style="border-left: 1px solid #333333;">
             <p class="mb-0" style="color: #9CA3AF; font-size: 12px;">Your Progress: <span class="ms-1" style="color: #FAFAFA; font-size: 14px;">0/10</span></p>
-            <a href="./continueChallenge.html" style="text-decoration: none;"><button style="font-size: 14px; font-weight: 500; background-color: #8026D9; padding: 8px 10px; border-radius: 10px; border: none; color: #FAFAFA;">Start Challenge</button></a>
+            <button style="font-size: 14px; font-weight: 500; background-color: #8026D9; padding: 8px 10px; border-radius: 10px; border: none; color: #FAFAFA;" data-bs-toggle="modal" data-bs-target="#oddsTierModal">Start Challenge</button>
             </div>
          </div>
       
@@ -137,15 +145,15 @@
                             <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Why you should become a verified trader</p>
                         </div>
                         <div  class="mb-4">
-                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/currency-dollar-circle.svg" alt=""> Earn from Copiers</p>
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/money.png" alt=""> Earn from Copiers</p>
                             <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Earn up to 50% of trading fees when other users cooy your trades</p>
                         </div>
                         <div  class="mb-4">
-                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/shield-tick.svg" alt=""> Verified Badge</p>
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/verify.png" alt=""> Verified Badge</p>
                             <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Boost your credibility and trust with copiers</p>
                         </div>
                         <div  class="mb-4">
-                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/trend-icon-white.svg" alt=""> Maintain Your Status</p>
+                            <p style="font-size: 16px; font-weight: 400; color: #FAFAFA;" class="mb-0"><img src="../assets/images/excellence.png" alt=""> Maintain Your Status</p>
                             <p style="font-size: 12px; font-weight: 400; color: #9CA3AF;" class="mb-0">Once verified, you must maintain your performance to keep your verified status. If your win rate drops below the required threshold, you'll return to verification status.</p>
                         </div>
                         <div  class="mb-4">
@@ -154,6 +162,336 @@
                         </div>
                     </div>
                 </div>
+                <!-- first modal -->
+        <div class="modal fade" id="oddsTierModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 1:</span> Select an Odds tier</h3>
+                    
+                    <div class="odds-grid mb-2">
+                        <button class="odds-btn" data-value="2">2x</button>
+                        <button class="odds-btn" data-value="3">3x</button>
+                        <button class="odds-btn" data-value="4">4x</button>
+                        <button class="odds-btn" data-value="5">5x</button>
+                        <button class="odds-btn" data-value="6">6x</button>
+                        <button class="odds-btn" data-value="7">7x</button>
+                        <button class="odds-btn" data-value="8">8x</button>
+                        <button class="odds-btn" data-value="9">9x</button>
+                        <button class="odds-btn" data-value="10">10x+</button>
+                    </div>
+
+                    <div class="win-rate-section text-center">
+                        <div class="win-rate-text ">Required win rate: 80%</div>
+                        <div class="win-rate-subtext">Win 8 out of 10 trades</div>
+                    </div>
+
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn-next flex-fill" data-bs-toggle="modal" data-bs-target="#assetModal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- First modal ends -->
+     <!-- Second modal begins -->
+      <div class="modal fade" id="assetModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 2:</span> Select an Asset</h3>
+                    
+                    <div class="odds-grid mb-2">
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="crypto">
+                            <img src="../assets/images/eth-dynamic-gradient.svg" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;">Crypto</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="forex">
+                            <img src="../assets/images/dollar-dollar-gradient.svg" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;">Forex</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="sports">
+                            <img src="../assets/images/trophy-dynamic-gradient.svg" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;">Sports</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-toggle="modal" data-bs-target="#oddsTierModal">Back</button>
+                        <button type="button" class="btn-next flex-fill" id="nextBtn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second modal ends -->
+     <!-- Thirdsports modal begins -->
+      <div class="modal fade" id="sportsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 3:</span>Select a Category</h3>
+                    
+                    <div class="odds-grid mb-2">
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Football">
+                            <img src="../assets/images/foot-ball.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Football</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Basketball">
+                            <img src="../assets/images/basketball.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Basketball</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Hockey">
+                            <img src="../assets/images/hockey.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Hockey</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Racing">
+                            <img src="../assets/images/finish.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Racing</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Dog Racing">
+                            <img src="../assets/images/dog.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Dog Racing</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Formula 1">
+                            <img src="../assets/images/racing-car.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Formula 1</p>
+                        </div>
+                         <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Rugby">
+                            <img src="../assets/images/rugby-ball.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Rugby</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Golf">
+                            <img src="../assets/images/golf-field.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Golf</p>
+                        </div>
+                        <div class="odds-btn flex-column text-center gap-1 asset-div" style="padding: 16px;" data-value="Boxing">
+                            <img src="../assets/images/boxing-gloves.png" alt="">
+                            <p style="font-size: 14px; color: #FAFAFA;" class="mt-2">Boxing</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-toggle="modal" data-bs-target="#assetModal">Back</button>
+                        <button type="button" class="btn-next flex-fill" data-bs-toggle="modal" data-bs-target="#eventModal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thirdsports modal ends -->
+     <!-- Thirdforex modal begins -->
+      <div class="modal fade" id="forexModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 3:</span>Create Tip</h3>
+                    <p class="mb-1" style="font-size: 14px; color: #525866;">Select Currency Pair</p>
+                    <select name="" id="" class="w-100" style="background-color: transparent; border: 1px solid #333333; border-radius: 10px; padding: 18px 10px; color: #FAFAFA; outline: none;">
+                        <option value="select" selected disabled>Select</option>
+                        <option value="usd/gbp">USD/GBP</option>
+                        <option value="ngn/usd">NGN/USD</option>
+                        <option value="eur/usd">EUR/USD</option>
+                    </select>
+                    <div class="mt-3">
+                        <p class="mb-1 text-lg-center" style="font-size: 14px; color: #9CA3AF;">Select Trade Direction </p>
+                        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                            <button class="btn-trade-direction buy-direction width-sm mb-2 mb-md-0" style="padding: 16px; background-color: #1CCB5C33; font-size: 18px; font-weight: 500; border-radius: 12px; color: #FAFAFA;">Buy +</button>
+                            <button class="btn-trade-direction sell-direction width-sm" style="padding: 16px; background-color: #F15B5B33; font-size: 18px; font-weight: 500; border-radius: 12px; color: #FAFAFA;">Sell -</button>
+                        </div>
+                        <div class=" d-flex flex-column flex-md-row justify-content-md-between mt-3">
+                            <div class="width-sm mb-2 mb-md-0 d-flex flex-column">
+                                <label style="color: #9CA3AF; font-size: 14px;" class="mb-1">Entry Price</label>
+                                <input type="text" placeholder="Enter a value" style="border: 1px solid #333333; background-color: transparent; padding: 18px 10px; border-radius: 10px; outline: none; color: #FAFAFA;">
+                            </div>
+                            <div class="width-sm mb-2 mb-lg-0 d-flex flex-column">
+                                <label style="color: #9CA3AF; font-size: 14px;" class="mb-1">Take Profit</label>
+                                <input type="text" placeholder="Enter a value" style="border: 1px solid #333333; background-color: transparent; padding: 18px 10px; border-radius: 10px; outline: none; color: #FAFAFA;">
+                            </div>
+                        </div>
+                        <div class="w-100 my-3 d-flex flex-column">
+                            <label style="color: #9CA3AF; font-size: 14px;" class="mb-1">Stop Loss</label>
+                            <input type="text" placeholder="Enter a value"  style="border: 1px solid #333333; background-color: transparent; padding: 18px 10px; border-radius: 10px; outline: none; color: #FAFAFA;">
+                        </div>
+                    </div>
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-toggle="modal" data-bs-target="#assetModal">Back</button>
+                        <button type="button" class="btn-next flex-fill"><a href="./continueChallenge.html" class="text-decoration-none" style="color: #FAFAFA;">Create Tip</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thirdforex modal ends -->
+     <!-- Thirdcrypto modal starts -->
+      <div class="modal fade" id="cryptoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 3:</span>Create Tip</h3>
+                    <p class="mb-1" style="font-size: 14px; color: #525866;">Select Crypto Pair</p>
+                    <select name="" id="" class="w-100" style="background-color: transparent; border: 1px solid #333333; border-radius: 10px; padding: 18px 10px; color: #FAFAFA; outline: none;">
+                        <option value="select" selected disabled>Select</option>
+                        <option value="btc/xrp">BTC/XRP</option>
+                        <option value="eth/usd">ETH/USD</option>
+                    </select>
+                    <div class="mt-3">
+                        <p class="mb-1 text-lg-center" style="font-size: 14px; color: #9CA3AF;">Select Trade Direction </p>
+                        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                            <button class="btn-trade-direction buy-direction width-sm mb-2 mb-md-0" style="padding: 16px; background-color: #1CCB5C33; font-size: 18px; font-weight: 500; border-radius: 12px; color: #FAFAFA;">Buy +</button>
+                            <button class="btn-trade-direction sell-direction width-sm" style="padding: 16px; background-color: #F15B5B33; font-size: 18px; font-weight: 500; border-radius: 12px; color: #FAFAFA;">Sell -</button>
+                        </div>
+                        <div class=" d-flex flex-column flex-md-row justify-content-md-between mt-3">
+                            <div class="width-sm mb-2 mb-md-0 d-flex flex-column">
+                                <label style="color: #9CA3AF; font-size: 14px;" class="mb-1">Entry Price</label>
+                                <input type="text" placeholder="Enter a value" style="border: 1px solid #333333; background-color: transparent; padding: 18px 10px; border-radius: 10px; outline: none; color: #FAFAFA;">
+                            </div>
+                            <div class="width-sm mb-2 mb-lg-0 d-flex flex-column">
+                                <label style="color: #9CA3AF; font-size: 14px;" class="mb-1">Take Profit</label>
+                                <input type="text" placeholder="Enter a value" style="border: 1px solid #333333; background-color: transparent; padding: 18px 10px; border-radius: 10px; outline: none; color: #FAFAFA;">
+                            </div>
+                        </div>
+                        <div class="w-100 my-3 d-flex flex-column">
+                            <label style="color: #9CA3AF; font-size: 14px;" class="mb-1">Stop Loss</label>
+                            <input type="text" placeholder="Enter a value"  style="border: 1px solid #333333; background-color: transparent; padding: 18px 10px; border-radius: 10px; outline: none; color: #FAFAFA;">
+                        </div>
+                    </div>
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-toggle="modal" data-bs-target="#assetModal">Back</button>
+                        <button type="button" class="btn-next flex-fill"><a href="./continueChallenge.html" class="text-decoration-none" style="color: #FAFAFA;">Create Tip</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Thirdcrypto modal ends -->
+    <!-- Fourth select event modal begins -->
+     <div class="modal fade" id="eventModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 4:</span> Select Event</h3>
+                    <p class="mt-3 mb-4 text-center" style="color: #FAFAFA; font-weight: 700;">< Italian Serie A ></p>
+                    <div class="odds-grid mb-2">
+                        <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Roma v Parma</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                        <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Como v Verona</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                       <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Atalanta v Milan</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                        <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Genoa v Cremonese</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                        <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Bologna v Torino</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                        <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Napoli v Roma</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                         <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Lecce v Verona</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                        <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Lazio v Cagliari</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                        <div class="odds-btn d-flex flex-column align-items-center justify-content-center text-center gap-1 asset-div" style="padding: 16px;" data-value="">
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 400;">Juventus v Fiorentina</p>
+                            <p style="font-size: 12px; color: #9CA3AF; font-weight: 400;" class="mb-0">Sat Nov. 1 || 12:30pm</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-toggle="modal" data-bs-target="#sportsModal">Back</button>
+                        <button type="button" class="btn-next flex-fill" data-bs-toggle="modal" data-bs-target="#selectOddsModal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Fourth select event modal ends -->
+      <!-- Fift modal begins -->
+       <div class="modal fade" id="selectOddsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 5:</span> Select Odds</h3>
+                    <p class="mt-3 mb-4 text-center" style="color: #FAFAFA; font-weight: 700;">Italian Serie A >  Como v Verona</p>
+                    <div class="d-flex gap-4 justify-content-lg-center overflow-x-auto mb-2" style="white-space: nowrap;">
+                        <p class="mb-0" style="color: #C084FC; font-weight: 400; font-size: 14px;">Popular</p>
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">Match Result</p>
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">Corners</p>
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">Goals</p>
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">Handicap</p>
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">Players</p>
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">Team</p>
+                    </div>
+                    
+                    <div class="odds-grid mb-2">
+                        <button class="odds-btn asset-div" style="font-weight: 400;" >1x2</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">Double Chance</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">Over/Under 2.5 Goals</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">BTTS</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">Draw No Bet</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">Handicap (Main Line)</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">Correct Score</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">Team to Score</button>
+                        <button class="odds-btn asset-div" style="font-weight: 400;">Juventus v Fiorentina</button>
+                    </div>
+
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-toggle="modal" data-bs-target="#eventModal">Back</button>
+                        <button type="button" class="btn-next flex-fill" data-bs-toggle="modal" data-bs-target="#stakeModal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fifth modal ends -->
+     <!-- Sixth modal begins -->
+      <div class="modal fade" id="stakeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content odds-modal">
+                <div class="modal-body p-4">
+                    <h3 class="modal-title text-center mb-5"><span style="color: #9CA3AF;">Step 6:</span> Create Tip</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-1 pb-1" style="border-bottom: 1px solid #333333;">
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">ASSET</p>
+                        <div>
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 700;">Sports</p>
+                            <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">Como v Verona</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-1 pb-1" style="border-bottom: 1px solid #333333;">
+                        <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">ODDS</p>
+                        <div>
+                            <p class="mb-0" style="color: #FAFAFA; font-weight: 700;">2.285</p>
+                            <p class="mb-0" style="color: #9CA3AF; font-weight: 400; font-size: 14px;">1x2:w1</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p style="color: #FAFAFA; font-size: 14px;" class="mb-0 text-md-center">INPUT YOUR STAKE</p>
+                        <input type="number" class="w-100" style="background-color: #FFF; border: 1px solid #E2E4E9; border-radius: 10px; padding: 15px 8px;">
+                    </div>
+                    <p style="color: #9CA3AF; font-size: 14px; font-weight: 400;" class="mb-0 text-md-center mt-3">Expected Return <span style="color: #4ADE80; font-weight: 700;">$2000</span></p>
+                    <div class="modal-footer-buttons d-flex gap-3">
+                        <button type="button" class="btn-cancel flex-fill" data-bs-toggle="modal" data-bs-target="#selectOddsModal">Back</button>
+                        <button type="button" class="btn-next flex-fill"><a href="./continueChallenge.html" class="text-decoration-none" style="color: #FAFAFA;">Create Tip</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -245,6 +583,99 @@
         legend: { display: false },
       }
     }
+  });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const oddsButtons = document.querySelectorAll(".odds-btn")
+  const nextButton = document.querySelector(".btn-next")
+  let selectedOdds = "2"
+  const bootstrap = window.bootstrap // Declare the bootstrap variable
+
+  oddsButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      oddsButtons.forEach((btn) => btn.classList.remove("active"))
+
+      this.classList.add("active")
+      selectedOdds = this.getAttribute("data-value")
+    })
+  })
+
+  nextButton.addEventListener("click", () => {
+
+    const modal = bootstrap.Modal.getInstance(document.getElementById("oddsTierModal"))
+    if (modal) {
+      modal.hide()
+    }
+  })
+})
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const oddsButtons = document.querySelectorAll(".btn-trade-direction")
+  const bootstrap = window.bootstrap // Declare the bootstrap variable
+
+  oddsButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      oddsButtons.forEach((btn) => btn.classList.remove("active"))
+
+      this.classList.add("active")
+    })
+  })
+
+//   nextButton.addEventListener("click", () => {
+
+//     const modal = bootstrap.Modal.getInstance(document.getElementById("oddsTierModal"))
+//     if (modal) {
+//       modal.hide()
+//     }
+//   })
+})
+</script>
+<script>
+    let selectedValue = null;
+
+  // Handle option selection
+  document.querySelectorAll('.asset-div').forEach(item => {
+    item.addEventListener('click', function () {
+      // Store selected value
+      selectedValue = this.dataset.value;
+
+      // UI feedback
+    //   document.querySelectorAll('.asset-div')
+    //     .forEach(el => el.classList.remove('active'));
+    //   this.classList.add('active');
+
+      // Enable Next button
+    //   document.getElementById('nextBtn').disabled = false;
+    });
+  });
+
+  // Handle Next click
+  document.getElementById('nextBtn').addEventListener('click', function () {
+    if (!selectedValue) return;
+
+    const modalMap = {
+      sports: 'sportsModal',
+      forex: 'forexModal',
+      crypto: 'cryptoModal'
+    };
+
+    const targetModalId = modalMap[selectedValue];
+    if (!targetModalId) return;
+
+    // Close current modal
+    const currentModal = bootstrap.Modal.getInstance(
+      document.getElementById('assetModal')
+    );
+    currentModal.hide();
+
+    // Open next modal after close animation
+    setTimeout(() => {
+      new bootstrap.Modal(
+        document.getElementById(targetModalId)
+      ).show();
+    }, 300);
   });
 </script>
 </body>

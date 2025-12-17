@@ -8,39 +8,39 @@
     <link rel="stylesheet" href="../assets/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body style="background-color: #110019;">
     <!-- SIDEBAR -->
-   <div class="dashboard-sidebar d-flex flex-column justify-content-between">
+  <div class="dashboard-sidebar d-flex flex-column justify-content-between" style="background-color: #110019;">
         <div>
-        <a href="../Home/no-subscription.html" class="dashboard-logo">tippin</a>
+        <a href="../TipsterDashboard/startChallenge.html" class="dashboard-logo">tippin</a>
         <ul class="dashboard-nav pt-4 ps-0">
             <li class="dashboard-nav-item">
-                <a href="../Home/no-subscription.html" class="dashboard-nav-link ">
-                    <span><img src="../assets/images/home.svg" alt="home"></span> Home
+                <a href="../TipsterDashboard/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/dasboard-icon.svg" alt="home"></span> Dashboard
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Tipsters/tipsters.html" class="dashboard-nav-link">
-                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> Tipsters
+                <a href="../MyTips/allTips.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/tipster.svg" alt="tipster"></span> My Tips
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Trades/trades.html" class="dashboard-nav-link">
-                    <span><img src="../assets/images/trades.svg" alt="trades"></span> My Trades
+                <a href="../Verification/startChallenge.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/verification-badge.svg" alt="trades"></span> Verification
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Affiliates/directReferrals.html" class="dashboard-nav-link">
+                <a href="../TipsterAffiliates/affiliates.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/affiliates.svg" alt="affiliates"></span> Affiliates
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Community/community.html" class="dashboard-nav-link">
+                <a href="../TipsterCommunity/community.html" class="dashboard-nav-link">
                     <span><img src="../assets/images/community.svg" alt="community"></span> Community
                 </a>
             </li>
             <li class="dashboard-nav-item">
-                <a href="../Settings/profile.html" class="dashboard-nav-link active">
+                <a href="../TipsterSettings/profile.html" class="dashboard-nav-link active">
                     <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
                 </a>
             </li>
@@ -51,7 +51,7 @@
             </li>
         </ul>
         </div>
-            <div class="d-flex align-items-end ps-2" style="font-size: 12px; "><a href="../TipsterDashboard/startChallenge.html" class="text-decoration-underline" style="color: #c19ae7;">Switch to Tipster dashboard</a></div>
+        <div class="d-flex align-items-end ps-2" style="font-size: 12px; "><a href="../Home/no-subscription.html" class="text-decoration-underline" style="color: #c19ae7;">Switch to Subscriber dashboard</a></div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -63,93 +63,130 @@
                 <span></span>
                 <span></span>
             </button>
-            <a href="../Home/no-subscription.html" class="mobile-logo">tippin</a>
+            <a href="../TipsterDashboard/startChallenge.html" class="mobile-logo">tippin</a>
         </div>
 
         <!-- HEADER -->
         <div class="dashboard-header-account mb-0">
             <div class="">
-                <h1 class="dashboard-title">Subscriber Settings</h1>
+                <h1 class="dashboard-title">Tipster Settings</h1>
                 <p class="dashboard-subtitle">Manage your account and preferences</p>
             </div>
         </div>
+        <!-- NO SUBSCRIPTION -->
+         <!-- <div style="width: 100%; background-color: #F15B5B33; border: 1px solid #F87171; color: #F87171; border-radius: 12px; text-align: center;" class="p-3 mb-5 d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p class="m-0 mb-2 mb-md-0">You don't have an active subscription. Please subscribe to a plan to start copying tips</p>
+            <a href="./inactiveSubscription.html" class="btn" style="background-color: #8026D9; color: #FAFAFA; padding: 0.5rem 1rem; border-radius: 0.5rem; text-decoration: none; font-size: 0.875rem; white-space: nowrap;">Subscribe Now</a>
+         </div> -->
          <!-- Profile Settings -->
         <div class="account-settings-wrapper">
             <!-- Account tabs navigation -->
             <div class="account-tabs-container">
                 <a href="./profile.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="profile">Profile</button></a>
-                <a href="./inactiveSubscription.html" style="text-decoration: none;"><button class="account-tab-btn account-tab-active" data-tab="subscriptions">Subscriptions</button></a>
-                <a href="./wallet.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="wallet">Wallet</button></a>
+                <a href="./wallet.html" style="text-decoration: none;"><button class="account-tab-btn account-tab-active" data-tab="wallet">Wallet</button></a>
                 <a href="./notifications.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="notifications">Notifications</button></a>
                 <a href="./security.html" style="text-decoration: none;"><button class="account-tab-btn" data-tab="security">Security</button></a>
             </div>
             <!-- Wallet Section -->
-             <div style="padding: 14px; border: 1px solid #333333; border-radius: 12px;">
-              <div class="d-flex flex-md-row flex-column justify-content-between align-items-md-center align-items-start mb-4 w-100">
-                <div class="width-sm mb-3 mb-md-0" style="background-color: #8026D933; padding: 16px; border-radius: 12px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                         <p style="font-size: 18px; font-weight: 500; color: #FAFAFA; margin-bottom: 0;">Monthly Subscription</p>
-                         <p style="font-size: 18px; font-weight: 500; color: #FAFAFA; margin-bottom: 0;">$89.50</p>
-                    </div>
-                    <a href="./activeSubscription.html" style="text-decoration: none;"><button style="font-size: 14px; font-weight: 500; color: #FAFAFA; padding: 6px 12px; background: transparent; border-radius: 20px; border: 1px solid #333333;">Active</button></a>
+             <div style="padding: 30px; border: 1px solid #333333; border-radius: 12px;">
+                <div class="mb-4">
+                    <h2 style="font-size: 18px; font-weight: 500; color: #FAFAFA;">Wallet Information</h2>
+                    <p style="font-size: 12px; color: #9CA3AF;">Manage your connected wallets and payment methods</p>
                 </div>
-                <div class="width-sm" style="background-color: #1CCB5C33; padding: 16px; border-radius: 12px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                         <p style="font-size: 18px; font-weight: 500; color: #FAFAFA; margin-bottom: 0;">Yearly Subscription</p>
-                         <p style="font-size: 18px; font-weight: 500; color: #FAFAFA; margin-bottom: 0;">$89.50</p>
-                    </div>
-                    <button style="font-size: 14px; font-weight: 500; color: #FAFAFA; padding: 6px 12px; background-color: #8026D9; border-radius: 20px; border: none;">Upgrade</button>
+                <div class="wallet-balance-section">
+        <div class="wallet-balance-container">
+            <div class="wallet-balance-label">Wallet Balance <span style="font-weight: 600;" class="ms-2">$50</span></div>
+            <div class="wallet-action-buttons">
+            <button class="wallet-add-btn"> + Add Money</button>
+            <button class="wallet-withdraw-btn">Withdraw</button>
+        </div>
+        </div>
+        
+    </div>
+    <div class="wallet-payment-section">
+        <div class="wallet-subsection-title">Payment methods</div>
+        <div class="wallet-payment-list">
+            <div class="wallet-payment-item">
+                <div class="wallet-payment-icon"><img src="../assets/images/credit-card-icon.svg" alt=""></div>
+                <div class="wallet-payment-details">
+                    <div class="wallet-payment-name">Solana Wallet</div>
+                    <div class="wallet-payment-meta">Phanto.... 111111</div>
                 </div>
-              </div>
+                <div class="wallet-payment-status">
+                    <div class="wallet-status-badge wallet-status-active">Active</div>
+                </div>
+                <button class="wallet-delete-btn"><img src="../assets/images/delete-icon.svg" alt=""></button>
+            </div>
+            <div class="wallet-payment-item">
+                <div class="wallet-payment-icon"><img src="../assets/images/credit-card-icon.svg" alt=""></div>
+                <div class="wallet-payment-details">
+                    <div class="wallet-payment-name">Credit Card</div>
+                    <div class="wallet-payment-meta">5399......7624 <span style="border-left: 1px solid #9CA3AF;" class="ps-1">Exp 01/28</span></div>
+                </div>
+                <div class="wallet-payment-status">
+                    <div class="wallet-status-badge">Active</div>
+                </div>
+                <button class="wallet-delete-btn"><img src="../assets/images/delete-icon.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <div class="wallet-add-payment-section">
+        <div class="wallet-subsection-title">Add Payment Method</div>
+        <div class="wallet-payment-options">
+            <div class="wallet-payment-option"><span><img src="../assets/images/credit-card-icon.svg" class="me-3" alt=""></span>Credit Card</div>
+            <div class="wallet-payment-option"><span><img src="../assets/images/bank-account-icon.svg" class="me-3" alt=""></span>Bank Account</div>
+            <div class="wallet-payment-option"><span><img src="../assets/images/crypto-wallet-icon.svg" class="me-3" alt=""></span>Crypto Wallet</div>
+        </div>
+    </div>
     <div class="wallet-transaction-section">
-        <div class="wallet-subsection-title">Subscription History</div>
+        <div class="wallet-subsection-title">Transaction History</div>
         <div class="wallet-table-wrapper">
             <div class="trades-table-scroll ">
             <table class="wallet-transactions-table">
                 <thead class="wallet-table-head">
                     <tr>
                         <th>Date</th>
-                        <th>Description</th>
+                        <th>Type</th>
                         <th>Amount</th>
-                        <th>Status</th>
+                        <th>Source</th>
                         <th>Receipt</th>
                     </tr>
                 </thead>
                 <tbody class="wallet-table-body">
                     <tr>
                         <td>15/09/2023</td>
-                        <td>Monthly Subscription</td>
-                        <td>$1</td>
-                        <td><span style="background-color: #1CCB5C33; color: #4ADE80; padding: 2px 4px; font-size: 10px; border-radius: 10px;">Paid</span></td>
+                        <td>Deposit</td>
+                        <td>$120</td>
+                        <td>Credit Card</td>
                         <td><a href="#" class="wallet-view-link">View</a></td>
                     </tr>
                     <tr>
                         <td>15/09/2023</td>
-                        <td>Monthly Subscription</td>
-                        <td>$1</td>
-                        <td><span style="background-color: #1CCB5C33; color: #4ADE80; padding: 2px 4px; font-size: 10px; border-radius: 10px;">Paid</span></td>
+                        <td>Deposit</td>
+                        <td>$599</td>
+                        <td>Crypto Wallet</td>
                         <td><a href="#" class="wallet-view-link">View</a></td>
                     </tr>
                     <tr>
                         <td>15/09/2023</td>
-                        <td>Monthly Subscription</td>
-                        <td>$1</td>
-                        <td><span style="background-color: #1CCB5C33; color: #4ADE80; padding: 2px 4px; font-size: 10px; border-radius: 10px;">Paid</span></td>
+                        <td>Withdrawal</td>
+                        <td>$20</td>
+                        <td>Tippin Wallet</td>
                         <td><a href="#" class="wallet-view-link">View</a></td>
                     </tr>
                     <tr>
                         <td>15/09/2023</td>
-                        <td>Monthly Subscription</td>
-                        <td>$1</td>
-                        <td><span style="background-color: #F15B5B33; color: #F87171; padding: 2px 4px; font-size: 10px; border-radius: 10px;">Failed</span></td>
-                        <td><a href="#" class="wallet-view-link" style="text-decoration: none;">N/A</a></td>
+                        <td>Withdrawal</td>
+                        <td>$15</td>
+                        <td>Tippin Wallet</td>
+                        <td><a href="#" class="wallet-view-link">View</a></td>
                     </tr>
                      <tr>
                         <td>15/09/2023</td>
-                        <td>Monthly Subscription</td>
-                        <td>$1</td>
-                        <td><span style="background-color: #F15B5B33; color: #F87171; padding: 2px 4px; font-size: 10px; border-radius: 10px;">Failed</span></td>
-                        <td><a href="#" class="wallet-view-link" style="text-decoration: none;">N/A</a></td>
+                        <td>Withdrawal</td>
+                        <td>$821</td>
+                        <td>Tippin Wallet</td>
+                        <td><a href="#" class="wallet-view-link">View</a></td>
                     </tr>
                 </tbody>
             </table>

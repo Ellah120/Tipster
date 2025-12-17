@@ -10,11 +10,12 @@
 </head>
 <body>
     <!-- SIDEBAR -->
-    <div class="dashboard-sidebar">
+    <div class="dashboard-sidebar d-flex flex-column justify-content-between">
+        <div>
         <a href="../Home/no-subscription.html" class="dashboard-logo">tippin</a>
         <ul class="dashboard-nav pt-4 ps-0">
             <li class="dashboard-nav-item">
-                <a href="../Home/no-subscription.html" class="dashboard-nav-link">
+                <a href="../Home/no-subscription.html" class="dashboard-nav-link ">
                     <span><img src="../assets/images/home.svg" alt="home"></span> Home
                 </a>
             </li>
@@ -43,7 +44,14 @@
                     <span><img src="../assets/images/settings.svg" alt="settings"></span> My Account
                 </a>
             </li>
+            <li class="dashboard-nav-item">
+                <a href="../login.html" class="dashboard-nav-link">
+                    <span><img src="../assets/images/out.png" " alt="settings"></span> Sign Out
+                </a>
+            </li>
         </ul>
+        </div>
+            <div class="d-flex align-items-end ps-2" style="font-size: 12px; "><a href="../TipsterDashboard/startChallenge.html" class="text-decoration-underline" style="color: #c19ae7;">Switch to Tipster dashboard</a></div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -61,7 +69,7 @@
         <!-- HEADER -->
         <div class="dashboard-header">
             <div>
-                <h1 class="dashboard-title">Dashboard</h1>
+                <h1 class="dashboard-title">Subscriber Dashboard</h1>
                 <p class="dashboard-subtitle">Welcome back, track your progress and copy trades from top performers</p>
             </div>
             <div class="d-flex align-items-center gap-4">
@@ -201,12 +209,8 @@
                         <button class="tipsters-filter-tab" data-filter="following">Following</button>
                         <button class="tipsters-filter-tab" data-filter="recommended">Recommended</button>
                     </div>
-                <div class="tipsters-search-controls">
+                <div class="tipsters-search-controls border-bottom-0">
                     <input type="text" class="tipsters-search-input" placeholder="Search tipsters" id="tipsterSearch">
-                    <label class="tipsters-filter-checkbox">
-                        <input type="checkbox" id="verifiedOnly">
-                        Verified only
-                    </label>
                 </div>
                 <div class="tipsters-result-item-trade">
                     <div class="tipsters-result-info-trade">
@@ -262,6 +266,7 @@
                         <div class="tipsters-result-details">
                             <div class="tipsters-result-header">
                                 <span class="tipsters-result-name">Marcus Williams</span>
+                                    <span class="tipsters-result-badge"><img src="../assets/images/verified-white.svg" alt="" class="me-1">Verified</span>
                             </div>
                             <div class="tipsters-result-stats">Win Rate: <span style="color: #FAFAFA;">76.2%</span> • Odds: <span style="color: #FAFAFA;">4x </span> • ROI: <span style="color: #FAFAFA;">34.8%</span></div>
                         </div>
