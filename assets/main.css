@@ -3522,8 +3522,8 @@
 }
 
 .odds-btn.active {
-  border-color: #C084FC;
-  background-color: #8026D933;
+  border-color: #8026D933;
+  background-color: #C084FC;
 }
 .odds-btn.active.asset-div {
     border-width: 1px;
@@ -3574,7 +3574,7 @@
 }
 
 .btn-next {
-  background-color: #8026D9;
+  background-color: #c28bf9;
   color: #FAFAFA;
 }
 
